@@ -2,37 +2,60 @@
 
 <ClassDiagram name="Levykauppa">
   <ClassDiagramComponents>
-    <Class name="Asiakas" package="" visibility="public" xPosition="51.0" yPosition="262.0">
+    <Class name="Asiakas || UI" package="" visibility="public" xPosition="37.0" yPosition="253.0">
       <Fields/>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="kysyLevya" returnType="void" visibility="public"/>
+        <Method name="selaaLevyt" returnType="void" visibility="public"/>
+      </Methods>
     </Class>
     <Class name="Kauppa" package="" visibility="public" xPosition="326.0" yPosition="131.0">
       <Fields/>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
     </Class>
-    <Class name="Kassa" package="" visibility="public" xPosition="637.0" yPosition="493.0">
+    <Class name="Kassa" package="" visibility="public" xPosition="584.0" yPosition="512.0">
       <Fields/>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Myyjä" package="" visibility="public" xPosition="584.0" yPosition="262.0">
-      <Fields/>
+    <Class name="Myyjä" package="" visibility="public" xPosition="584.0" yPosition="253.0">
+      <Fields>
+        <Field name="Myynti" type="Object" visibility="private"/>
+      </Fields>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="getLevylista" returnType="void" visibility="public"/>
+      </Methods>
     </Class>
     <Class name="UI" package="" visibility="public" xPosition="326.0" yPosition="8.0">
       <Fields/>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Levyt" package="" visibility="public" xPosition="326.0" yPosition="410.0">
-      <Fields/>
+    <Class name="Levyt" package="" visibility="public" xPosition="326.0" yPosition="334.0">
+      <Fields>
+        <Field name="Levy" type="Object" visibility="private"/>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="Levylista" returnType="Arraylist" visibility="public"/>
+        <Method name="Levyt" returnType="Hashmap" visibility="public"/>
+      </Methods>
     </Class>
     <Class name="Lompakko" package="" visibility="public" xPosition="51.0" yPosition="493.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="maksa" returnType="void" visibility="public"/>
+        <Method name="rahatilanne" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Levy" package="" visibility="public" xPosition="326.0" yPosition="614.0">
       <Fields/>
       <Constructors/>
       <Methods/>
@@ -41,14 +64,15 @@
   <ClassDiagramRelations>
     <UseRelation name="" source="Kassa" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Myyjä" target="Kassa" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas" target="Lompakko" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Lompakko" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Kassa" target="Lompakko" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Kauppa" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Myyjä" target="Asiakas" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas" target="Levyt" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Myyjä" target="Asiakas || UI" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Levyt" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Myyjä" target="Levyt" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Lompakko" target="Kassa" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

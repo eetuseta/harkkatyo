@@ -8,8 +8,8 @@ package harkkatyo;
 
 /**
  *
- * @author Tony
+ * @author Jaakkoen
  */
 public class Levyt {
-    
+       
 }

@@ -8,7 +8,7 @@ package harkkatyo;
 
 /**
  *
- * @author Tony
+ * @author Jaakko
  */
 public class Levy {
     String artisti, levynNimi;

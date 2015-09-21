@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 package harkkatyo;
-
+import java.util.Scanner;
 /**
  *
  * @author jaakk_000
  */
 public class UI {
+    Scanner lukija = new Scanner(System.in);
+    
     
     
 }

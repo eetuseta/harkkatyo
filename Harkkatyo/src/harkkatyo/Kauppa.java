@@ -12,5 +12,11 @@ package harkkatyo;
 public class Kauppa {
 
     public static void main(String[] args) {
+        Myyja myyja = new Myyja();
+        Asiakas asiakas = new Asiakas();
+        Levyt levyt = new Levyt();
+        UI ui = new UI();
+        
+        ui.Aloitalevykauppa();
     }
 }

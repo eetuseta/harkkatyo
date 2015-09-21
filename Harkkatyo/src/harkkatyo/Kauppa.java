@@ -10,15 +10,7 @@ package harkkatyo;
  * @author Eetu
  */
 public class Kauppa {
-    
-    int kikkeli, möö;
-    
-    public Kauppa (){
-        //synnyttää uuden Kikkelimöön
-    }
-    public Kauppa (int kikkeli,int möö){
-        this.kikkeli=kikkeli;
-        this.möö=möö;
-    }
 
+    public static void main(String[] args) {
+    }
 }

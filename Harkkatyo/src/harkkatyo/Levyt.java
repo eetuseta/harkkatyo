@@ -11,5 +11,7 @@ package harkkatyo;
  * @author Jaakkoen
  */
 public class Levyt {
-       
+    public Levyt() {}
+    
 }
+    

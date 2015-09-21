@@ -1,15 +1,27 @@
 package harkkatyo;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Myyjä joka osaa kysyä Levyt-classilta onko jotain levyä
+//Osaa vastata kysyttäessä onko jotain levyä getOnkolevya
 
-/**
- *
- * @author Tony
- */
 public class Myyja {
     
+    String Myyjannimi;
+    String kysyttylevy;
+    private levyt
+    
+    public Myyja (){
+    }
+    public Myyja (String nimi){
+        this.Myyjannimi=nimi;
+    }
+    
+    //Metodit
+    public boolean getOnkolevya(){
+        if (levyt.getOnkolevya != true){
+            return false;
+        }
+        else {
+            return levyt.getOnkolevya;
+        }
+            }
 }

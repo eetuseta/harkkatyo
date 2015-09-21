@@ -9,8 +9,16 @@ package harkkatyo;
  *
  * @author Eetu
  */
-public class Kikkelimöö {
-    public Kikkelimöö (){
+public class Kauppa {
+    
+    int kikkeli, möö;
+    
+    public Kauppa (){
         //synnyttää uuden Kikkelimöön
     }
+    public Kauppa (int kikkeli,int möö){
+        this.kikkeli=kikkeli;
+        this.möö=möö;
+    }
+
 }

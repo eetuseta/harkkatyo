@@ -1,3 +1,4 @@
+//Jaakkokin osallistui muokkaukseen
 //OHJE!
 //https://netbeans.org/kb/docs/ide/git.html#initialize
 package harkkatyo;

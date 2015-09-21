@@ -7,7 +7,7 @@ public class Myyja {
     
     String Myyjannimi;
     String kysyttylevy;
-    private levyt
+    private Levyt levyt;
     
     public Myyja (){
     }
@@ -16,6 +16,9 @@ public class Myyja {
     }
     
     //Metodit
+    void setLevyt (Levyt levyt){
+        this.levyt=levyt;
+    }
     public boolean getOnkolevya(){
         if (levyt.getOnkolevya != true){
             return false;

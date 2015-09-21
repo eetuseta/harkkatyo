@@ -10,5 +10,7 @@ package harkkatyo;
  * @author Eetu
  */
 public class Kikkelimöö {
-    
+    public Kikkelimöö (){
+        //synnyttää uuden Kikkelimöön
+    }
 }

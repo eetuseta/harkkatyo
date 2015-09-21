@@ -11,5 +11,6 @@ package harkkatyo;
  * @author Tony
  */
 public class Levy {
-    
+    String artisti, levynNimi;
+    int hinta;
 }

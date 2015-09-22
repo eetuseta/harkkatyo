@@ -11,26 +11,29 @@ package harkkatyo;
  */
 public class Kauppa {
 
-    public static void main(String[] args) {
         Myyja myyja = new Myyja();
         Asiakas asiakas = new Asiakas();
         Levyt levyt = new Levyt();
         UI ui = new UI();
         
+        public void kaynnista(){
         ui.Aloitalevykauppa();
-        
-        public boolean getOnkolevya(){
-        if (levyt.getOnkoLevya() == true){
-            return true;
         }
-        else {
-            return false;
+        
+        //Metodit
+        public boolean getOnkolevya(String haluttulevy){
+            if (asiakas.onkoLevya(haluttulevy) == true){
+                return true;
+            }
+                else {
+                return false;
+            }      
         }
-      
-    }
         
-        
-      
+    public static void main(String[] args) {
+        Kauppa kauppa = new Kauppa();
+        kauppa.kaynnista();
+
     
     }
 }

@@ -23,7 +23,7 @@ public class UI {
     public void Aloitalevykauppa(){
         System.out.println("Minkä levyn haluat: ");
         haluttulevy=lukija.next();
-    //   kauppa.getOnkolevya(haluttulevy);
+        kauppa.getOnkolevya(haluttulevy);
     }
 
 }

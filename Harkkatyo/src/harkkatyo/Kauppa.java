@@ -20,7 +20,7 @@ public class Kauppa {
         }
                 
         public boolean getOnkolevya(String haluttulevy){    
-            if (asiakas.onkoLevya(haluttulevy)==true){
+            if (asiakas.onkoLevya(haluttulevy) == true){
                 return true;
             }
                 else {

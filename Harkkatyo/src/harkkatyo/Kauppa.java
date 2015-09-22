@@ -19,13 +19,18 @@ public class Kauppa {
         
         ui.Aloitalevykauppa();
         
-        /*boolean getOnkolevya (String haluttulevy){
-            if (asiakas.getOnkolevya(haluttulevy)==true){
+        public boolean getOnkolevya(){
+        if (levyt.getOnkoLevya() == true){
             return true;
-        
         }
-            else {
+        else {
             return false;
-        }*/
+        }
+      
+    }
+        
+        
+      
+    
     }
 }

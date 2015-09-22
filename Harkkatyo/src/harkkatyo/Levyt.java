@@ -43,8 +43,11 @@ public class Levyt {
         catch(Exception e){
         e.printStackTrace();
         return false;
+        }
     }
-    
+    public boolean getOnkoLevya(){   
+    return true;    
     }
 }
+
     

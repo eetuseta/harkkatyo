@@ -16,15 +16,15 @@ public class Myyja {
     }
     */
     //Metodit
-    void setLevyt (Levyt levyt){
+    void Levyt(Levyt levyt){
         this.levyt=levyt;
     }
     public boolean getOnkolevya(){
-        if (levyt.getOnkolevya() != true){
-            return false;
+        if (levyt.getOnkoLevya() == true){
+            return true;
         }
         else {
-            return true;
+            return false;
         }
       
     }

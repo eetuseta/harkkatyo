@@ -35,7 +35,19 @@ public class Asiakas {
             System.out.println("ostanpa pois kuleksimasta.");//testisyöte
             return true;
         }
+        
     }
+    public boolean ostaLevy (String levy){
+        if(myyja.getOnkolevya()){
+            return true;
+        }
+        else{
+            return false;}
+        
+        }
+   
+        
+}
 
     /*boolean onkoLevya(String levy) {
      if (myyja.getOnkolevya(levy) == true) {
@@ -53,7 +65,7 @@ public class Asiakas {
         //tehdään kysely myyjälle. löytyykö levyä x
     //System.out.println("Katsot ympärillesi hämmentyneenä ja käännyt myyjän puoleen.");
     //System.out.println("Hei, onko teillä: " + lukija.next + "levyä?" );
-}
+
 
 //selaa levyjä kirjaimen "d" kohdalta
 

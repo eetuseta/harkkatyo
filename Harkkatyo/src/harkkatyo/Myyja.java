@@ -19,8 +19,8 @@ public class Myyja {
     void Levyt(Levyt levyt){
         this.levyt=levyt;
     }
-    public boolean getOnkolevya(){
-        if (levyt.getOnkoLevya() == true){
+    public boolean getOnkolevya(String levy){
+        if (levyt.getOnkoLevya(levy) == true){
             return true;
         }
         else {

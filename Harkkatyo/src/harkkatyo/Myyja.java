@@ -11,20 +11,21 @@ public class Myyja {
     
     public Myyja (){
     }
-    public Myyja (String nimi){
+    /*public Myyja (String nimi){
         this.Myyjannimi=nimi;
     }
-    
+    */
     //Metodit
     void setLevyt (Levyt levyt){
         this.levyt=levyt;
     }
     public boolean getOnkolevya(){
-        if (levyt.getOnkolevya != true){
+        if (levyt.getOnkolevya() != true){
             return false;
         }
         else {
-            return levyt.getOnkolevya;
+            return true;
         }
-            }
+      
+    }
 }

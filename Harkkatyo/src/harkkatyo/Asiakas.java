@@ -15,7 +15,7 @@ public class Asiakas {
 
     private Myyja myyja;
 
-    public String levy;
+    public String levy;//teksti
     static Scanner lukija = new Scanner(System.in);
 
     public Asiakas() {

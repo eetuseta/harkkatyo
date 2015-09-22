@@ -18,5 +18,14 @@ public class Kauppa {
         UI ui = new UI();
         
         ui.Aloitalevykauppa();
+        
+        /*boolean getOnkolevya (String haluttulevy){
+            if (asiakas.getOnkolevya(haluttulevy)==true){
+            return true;
+        
+        }
+            else {
+            return false;
+        }*/
     }
 }

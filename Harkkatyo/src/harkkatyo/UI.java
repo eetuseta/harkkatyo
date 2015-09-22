@@ -16,9 +16,19 @@ public class UI {
     }
     
     public void Aloitalevykauppa(){
-        System.out.println("Minkä levyn haluat: ");
+        System.out.println("Myyjä kysyy: Minkä levyn haluat?");
         haluttulevy=lukija.next();
-        kauppa.getOnkolevya(haluttulevy);
+        while (kauppa.getOnkolevya(haluttulevy)==false){
+            System.out.println("Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan sunnuntaiartisteja pidetä hyllyillä notkumassa");
+            System.out.println("Myyjä sanoo: Kysyppä jotain muuta: ");
+            haluttulevy = lukija.next();
+        }
+            System.out.println("Myyjä sanoo: Tottakai meillä on "+haluttulevy+"! Minkälaiseksi levykaupaksi meitä luulet?");
+
+        {
+            System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
+        }
+        
     }
     
 }

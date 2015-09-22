@@ -1,4 +1,4 @@
-package testis;
+package harkkatyo;
 import java.io.*;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,6 +13,10 @@ import java.io.*;
 public class Levyt {
     FileReader fr = null;
     BufferedReader br = null;
+    String artisti, levynNimi;
+    int hinta;    
+    Levy levy = null;
+
     //konstruktori
     public Levyt() {}
     
@@ -20,11 +24,20 @@ public class Levyt {
     public boolean lue(){
     
         try {
-        fr = new FileReader("resources\\levyt.txt");
-        br = new BufferedReader(fr);
-        String tieto;
-        tieto = br.readLine();
-            System.out.println(tieto);
+            fr = new FileReader("C:\\Oliot\\ohjelmointi\\harkkatyo\\levyt.txt");
+            br = new BufferedReader(fr);
+            String tieto = br.readLine();
+            String[] tiedot = tieto.split("-");
+            artisti = tiedot[0];
+            levynNimi = tiedot[1];
+            hinta = Integer.parseInt(tiedot[2]);
+            
+            levy = new Levy(artisti, levynNimi, hinta);
+            
+            System.out.println(levy.artisti);
+            System.out.println(levy.levynNimi);
+            System.out.println(levy.hinta);
+            
             return true;
         }
         catch(Exception e){

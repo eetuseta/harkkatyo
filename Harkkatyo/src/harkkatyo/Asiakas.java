@@ -14,6 +14,8 @@ import java.util.Scanner;
 public class Asiakas {
 
     private Myyja myyja;
+    private Lompakko lompakko;
+    public int hinta;
 
     public String levy;//teksti
     static Scanner lukija = new Scanner(System.in);
@@ -45,7 +47,12 @@ public class Asiakas {
             return false;}
         
         }
-   
+   public boolean maksaLevy(int rahamaara){
+       if(lompakko.getRahamaara() > hinta){
+           return true;
+       }
+       else{ return false;}
+   }
         
 }
 

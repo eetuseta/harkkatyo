@@ -45,8 +45,15 @@ public class Levyt {
         return false;
         }
     }
+    
+    int tosi = 1;
     public boolean getOnkoLevya(){   
-    return true;    
+    if (tosi == 1){
+        return true;
+    }   
+    else {
+        return false;
+    }
     }
 }
 

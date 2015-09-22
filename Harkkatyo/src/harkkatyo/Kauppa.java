@@ -1,28 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+// Main ohjelma, sekä kauppa class jonka kautta kaikki tieto kulkee UI:lta Olioille
 package harkkatyo;
 
-/**
- *
- * @author Eetu
- */
-public class Kauppa {
 
+public class Kauppa {
+        
+        //Kauppaolion ominaisuudet
+        
         Myyja myyja = new Myyja();
         Asiakas asiakas = new Asiakas();
         Levyt levyt = new Levyt();
         UI ui = new UI();
         
-        public void kaynnista(){
-        ui.Aloitalevykauppa();
-        }
         
         //Metodit
-        public boolean getOnkolevya(String haluttulevy){
-            if (asiakas.onkoLevya(haluttulevy) == true){
+        
+        public void kaynnista(){                            //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
+            ui.Aloitalevykauppa();
+        }
+                
+        public boolean getOnkolevya(String haluttulevy){    
+            if (asiakas.onkoLevya(haluttulevy)==true){
                 return true;
             }
                 else {
@@ -30,9 +28,11 @@ public class Kauppa {
             }      
         }
         
+        //Varsinainen main -
+        
     public static void main(String[] args) {
-        Kauppa kauppa = new Kauppa();
-        kauppa.kaynnista();
+        Kauppa kauppa = new Kauppa();       //luodaan kauppaolio
+        kauppa.kaynnista();                 //käynnistetään metodi joka käynnistää UI:n 
 
     
     }

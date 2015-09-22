@@ -29,7 +29,7 @@ public class Asiakas {
     }
     
     public boolean onkoLevya (String levy){
-        if (!myyja.getOnkolevya()){
+        if (!myyja.getOnkolevya(levy)){
             System.out.println("voi räkä."); //testisyöte
             return false;
         }

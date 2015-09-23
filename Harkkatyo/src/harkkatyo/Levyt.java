@@ -23,7 +23,7 @@ public class Levyt {
     public Levyt() {
         lue();
     }
-    
+    //tämä tiedoston luku metodi TOIMII, mutta lukee vaan ensimmäisen rivin :)
     private boolean lue(){
         try {
             fr = new FileReader("resources\\levyt.txt");

@@ -1,5 +1,6 @@
 package harkkatyo;
 import java.io.*;
+import java.util.*;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,6 +12,7 @@ import java.io.*;
  * @author Jaakkoen
  */
 public class Levyt {
+    ArrayList<Levy> levyt = new ArrayList();
     FileReader fr = null;
     BufferedReader br = null;
     String artisti, levynNimi;
@@ -18,13 +20,13 @@ public class Levyt {
     Levy levy = null;
 
     //konstruktori
-    public Levyt() {}
+    public Levyt() {
+        lue();
+    }
     
-    //metodit
     public boolean lue(){
-    
         try {
-            fr = new FileReader("C:\\Oliot\\ohjelmointi\\harkkatyo\\levyt.txt");
+            fr = new FileReader("resources\\levyt.txt");
             br = new BufferedReader(fr);
             String tieto = br.readLine();
             String[] tiedot = tieto.split("-");
@@ -45,7 +47,7 @@ public class Levyt {
         return false;
         }
     }
-    
+    //alpha buildi
     int tosi = 1;
     public boolean getOnkoLevya(){   
     if (tosi == 1){

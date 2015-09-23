@@ -19,8 +19,6 @@ public class Testis {
     public static void main(String[] args) {
         // TODO code application logic here
         Levyt testi = new Levyt();
-        
-        testi.lue();
     }
     
 }

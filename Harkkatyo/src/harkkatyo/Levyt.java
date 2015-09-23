@@ -24,11 +24,13 @@ public class Levyt {
         lue();
     }
     
-    public boolean lue(){
+    private boolean lue(){
         try {
             fr = new FileReader("resources\\levyt.txt");
             br = new BufferedReader(fr);
-            String tieto = br.readLine();
+            String tieto;
+            
+            tieto = br.readLine();
             String[] tiedot = tieto.split("-");
             artisti = tiedot[0];
             levynNimi = tiedot[1];

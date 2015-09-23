@@ -47,10 +47,9 @@ public class Levyt {
         return false;
         }
     }
-    //alpha buildi
-    int tosi = 1;
-    public boolean getOnkoLevya(){   
-    if (tosi == 1){
+    
+    public boolean getOnkoLevya(String levy){   
+    if (levy == "frederik"){
         return true;
     }   
     else {

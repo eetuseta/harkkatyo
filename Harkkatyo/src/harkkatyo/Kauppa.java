@@ -15,21 +15,25 @@ public class Kauppa {
         
         //Metodit
         
-        public void kaynnista(){                //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
+        
+        public void kaynnista(){                                //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
+            asiakas.Myyja(myyja);
+            myyja.Levyt(levyt);
             do { 
                 ui.Aloitalevykauppa();
             }
-            while (!"exit".equals(ui.Aloitalevykauppa()));   //Ohjelma loppuu
+            while (!ui.Aloitalevykauppa().equals("exit"));   //Ohjelma loppuu
         }
                 
         public String getOnkolevya(String haluttulevy){    
-            return levyt.getOnkoLevya(haluttulevy);
+            return asiakas.onkoLevya(haluttulevy);
             
         }
         
         //Varsinainen main -
         
     public static void main(String[] args) {
+        
         Kauppa kauppa = new Kauppa();       //luodaan kauppaolio
         kauppa.kaynnista();                 //käynnistetään metodi joka käynnistää UI:n 
         System.exit(0);

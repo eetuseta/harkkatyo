@@ -28,9 +28,9 @@ public class Asiakas {
         this.myyja = myyja;
     }
     
-    public String onkoLevya (String levy){
-        myyja.getOnkolevya(levy);
-        return levy;
+    public String onkoLevya(String levy){
+        return myyja.getOnkolevya(levy);
+        
     }
     /*public boolean ostaLevy (String levy){
         if(myyja.getOnkolevya(levy)){

@@ -21,12 +21,12 @@ public class UI {
     public String Aloitalevykauppa(){
         System.out.println("Myyjä kysyy: Minkä levyn haluat?");
         haluttulevy=lukija.next();
-        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.")){
+        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("exit")){
             System.out.println("Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan sunnuntaiartisteja pidetä hyllyillä notkumassa");
             System.out.println("Myyjä sanoo: Kysyppä jotain muuta: ");
             haluttulevy = lukija.next();
         }
-        if ("exit".equals(haluttulevy)){
+        if (haluttulevy.equals("exit")){
             return haluttulevy;
         }
         else {

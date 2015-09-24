@@ -15,8 +15,7 @@ public class Myyja {
         this.levyt=levyt;
     }
     public String getOnkolevya(String levy){
-        levyt.getOnkoLevya(levy);
-        return levy;
+        return levyt.getOnkoLevya(levy);
     }
 
 }

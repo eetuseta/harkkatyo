@@ -10,13 +10,16 @@ public class Kauppa {
         Myyja myyja = new Myyja();
         Asiakas asiakas = new Asiakas();
         Levyt levyt = new Levyt();
-        UI ui = new UI();
+        UI ui = new UI(this);
         Lompakko lompakko = new Lompakko();
         
         //Metodit
         
-        public void kaynnista(){                            //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
-            ui.Aloitalevykauppa();
+        public void kaynnista(){                //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
+            do { 
+                ui.Aloitalevykauppa();
+            }
+            while (!"exit".equals(ui.Aloitalevykauppa()));   //Ohjelma loppuu
         }
                 
         public boolean getOnkolevya(String haluttulevy){    
@@ -33,7 +36,7 @@ public class Kauppa {
     public static void main(String[] args) {
         Kauppa kauppa = new Kauppa();       //luodaan kauppaolio
         kauppa.kaynnista();                 //käynnistetään metodi joka käynnistää UI:n 
-
+        System.exit(0);
     
     }
 }

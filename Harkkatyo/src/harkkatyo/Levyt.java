@@ -72,7 +72,7 @@ public class Levyt {
         String tulos = "Ei oo.";
         
         for(Levy levy : levyt){
-            if (haku.equalsIgnoreCase(levy.artisti)) {
+            if (haku.equalsIgnoreCase(levy.artisti) || haku.equalsIgnoreCase(levy.levynNimi)) {
             tulos = (levy.artisti+" "+levy.levynNimi+" "+levy.hinta+"€");
             }
         }

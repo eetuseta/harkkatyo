@@ -19,6 +19,12 @@ public class UI {
     //METODIT
     
     public String Aloitalevykauppa(){
+        int valitsin;
+        System.out.println("Olet levykaupassa, haluatko kysyä myyjältä artistia vai kävellä ulos? \n1 Kysy myyjältä artistia\n2 Kävele ulos:\n");
+        valitsin = lukija.nextInt();
+        switch (valitsin){
+            
+            case 1:
         System.out.println("Myyjä kysyy: Minkä levyn haluat?");
         haluttulevy=lukija.next();
         while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("exit")){
@@ -35,7 +41,11 @@ public class UI {
             System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
             return "exit";
         }
-        
+            
+            case 2:
+                return "exit";
+            
+        }
+        return haluttulevy;
     }
-    
 }

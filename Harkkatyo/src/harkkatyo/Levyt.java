@@ -13,8 +13,6 @@ import java.util.*;
  */
 public class Levyt {
     ArrayList<Levy> levyt = new ArrayList();
-    //FileReader fr = null;
-    //BufferedReader br = null;
     String artisti, levynNimi;
     int hinta;    
     Levy levy = null;
@@ -23,33 +21,9 @@ public class Levyt {
     public Levyt() {
         lue();
     }
-    //tämä tiedoston luku metodi TOIMII, mutta lukee vaan ensimmäisen rivin :)
-    /*private boolean lue(){
-        try {
-            fr = new FileReader("resources\\levyt.txt");
-            br = new BufferedReader(fr);
-            String tieto = br.readLine();
-            String[] tiedot = tieto.split("-");
-            artisti = tiedot[0];
-            levynNimi = tiedot[1];
-            hinta = Integer.parseInt(tiedot[2]);
-            
-            levy = new Levy(artisti, levynNimi, hinta);
-            
-            System.out.println(levy.artisti);
-            System.out.println(levy.levynNimi);
-            System.out.println(levy.hinta);
-            
-            return true;
-        }
-        catch(Exception e){
-        e.printStackTrace();
-        return false;
-        }
-    }*/
     
     private void lue(){
-        try(FileReader fr = new FileReader("resources\\levyt.txt");
+        try(FileReader fr = new FileReader("resources\\testilevyt.txt");
             BufferedReader br = new BufferedReader(fr)){
             String rivi = br.readLine();
             
@@ -65,8 +39,12 @@ public class Levyt {
             }
         }    
         catch(Exception e){
-            e.printStackTrace();
         }
+    
+    //testi syntyykö kaikki levyt
+        for(Levy levy : levyt){
+            System.out.println(levy.artisti+" : "+levy.levynNimi+" "+levy.hinta +"€");
+    }
     }
     public String getOnkoLevya(String haku){   
         String tulos = "Ei oo.";

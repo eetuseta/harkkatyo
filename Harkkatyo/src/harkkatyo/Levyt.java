@@ -68,14 +68,18 @@ public class Levyt {
             e.printStackTrace();
         }
     }
-    public boolean getOnkoLevya(String levy){   
-    if (levy == "frederik"){
-        return true;
-    }   
-    else {
-        return false;
+    public String getOnkoLevya(String haku){   
+        String tulos = "Ei oo.";
+        
+        for(Levy levy : levyt){
+            if (haku.equalsIgnoreCase(levy.artisti)) {
+            tulos = (levy.artisti+" "+levy.levynNimi+" "+levy.hinta+"€");
+            }
+        }
+        return tulos;
     }
-    }
+        
+
 }
 
     

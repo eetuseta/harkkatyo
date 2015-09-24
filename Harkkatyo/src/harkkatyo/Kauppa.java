@@ -22,13 +22,9 @@ public class Kauppa {
             while (!"exit".equals(ui.Aloitalevykauppa()));   //Ohjelma loppuu
         }
                 
-        public boolean getOnkolevya(String haluttulevy){    
-            if (asiakas.onkoLevya(haluttulevy) == true){
-                return true;
-            }
-            else {
-                return false;
-            }      
+        public String getOnkolevya(String haluttulevy){    
+            return levyt.getOnkoLevya(haluttulevy);
+            
         }
         
         //Varsinainen main -

@@ -8,7 +8,7 @@ package harkkatyo;
 import harkkatyo.Levyt;
 import java.util.Scanner;
 import java.util.*;
-
+//kikkeli
 
 /**
  *

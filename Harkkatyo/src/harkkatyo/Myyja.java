@@ -5,27 +5,18 @@ package harkkatyo;
 
 public class Myyja {
     
-    String Myyjannimi;
-    String kysyttylevy;
+    
     private Levyt levyt;
     
     public Myyja (){
     }
-    /*public Myyja (String nimi){
-        this.Myyjannimi=nimi;
-    }
-    */
     //Metodit
-    void Levyt(Levyt levyt){
+    public void Levyt(Levyt levyt){
         this.levyt=levyt;
     }
-    public boolean getOnkolevya(String levy){
-        if (levyt.getOnkoLevya(levy) == true){
-            return true;
-        }
-        else {
-            return false;
-        }
-      
+    public String getOnkolevya(String levy){
+        levyt.getOnkoLevya(levy);
+        return levy;
     }
+
 }

@@ -21,7 +21,7 @@ public class UI {
     public String Aloitalevykauppa(){
         System.out.println("Myyjä kysyy: Minkä levyn haluat?");
         haluttulevy=lukija.next();
-        while (kauppa.getOnkolevya(haluttulevy)==false && !"exit".equals(haluttulevy)){
+        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.")){
             System.out.println("Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan sunnuntaiartisteja pidetä hyllyillä notkumassa");
             System.out.println("Myyjä sanoo: Kysyppä jotain muuta: ");
             haluttulevy = lukija.next();
@@ -30,7 +30,8 @@ public class UI {
             return haluttulevy;
         }
         else {
-            System.out.println("Myyjä sanoo: Tottakai meillä on "+haluttulevy+"! Minkälaiseksi levykaupaksi meitä luulet?");
+            String vastaus = kauppa.getOnkolevya(haluttulevy);
+            System.out.println("Myyjä sanoo: Tottakai meillä on "+vastaus+"! Minkälaiseksi levykaupaksi meitä luulet?");
             System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
             return "exit";
         }

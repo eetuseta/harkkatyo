@@ -24,29 +24,22 @@ public class Asiakas {
 
     }
 
-    void Myyja(Myyja myyja) {
+    public void Myyja(Myyja myyja) {
         this.myyja = myyja;
     }
     
-    public boolean onkoLevya (String levy){
-        //if (!myyja.getOnkolevya(levy)){
-            //System.out.println("voi räkä."); //testisyöte
-        //    return false;
-        //}
-        //else {
-            //System.out.println("ostanpa pois kuleksimasta.");//testisyöte
-            return true;
-        //}
-        
+    public String onkoLevya (String levy){
+        myyja.getOnkolevya(levy);
+        return levy;
     }
-    public boolean ostaLevy (String levy){
+    /*public boolean ostaLevy (String levy){
         if(myyja.getOnkolevya(levy)){
             return true;
         }
         else{
             return false;}
         
-        }
+        }*/
    public boolean maksaLevy(int rahamaara){
        if(lompakko.getRahamaara() > hinta){
            return true;

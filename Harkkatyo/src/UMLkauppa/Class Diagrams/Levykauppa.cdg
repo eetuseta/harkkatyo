@@ -63,16 +63,17 @@
   </ClassDiagramComponents>
   <ClassDiagramRelations>
     <UseRelation name="" source="Kassa" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Asiakas || UI" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Lompakko" target="Kassa" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Myyjä" target="Kassa" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Asiakas || UI" target="Lompakko" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Kassa" target="Lompakko" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Kauppa" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas || UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Myyjä" target="Asiakas || UI" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Asiakas || UI" target="Myyjä" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Levyt" target="Levy" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Asiakas || UI" target="Levyt" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Myyjä" target="Levyt" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="UI" target="Kauppa" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Lompakko" target="Kassa" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

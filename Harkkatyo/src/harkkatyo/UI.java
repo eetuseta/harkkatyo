@@ -22,7 +22,8 @@ public class UI {
         int valitsin;
         System.out.println("Olet levykaupassa, haluatko kysyä myyjältä artistia vai kävellä ulos? "
                 + "\n1 Kysy myyjältä artistia."
-                + "\n2 Kävele ulos.\n");
+                + "\n2 Selaa levyjä hyllystä."
+                + "\n3 Kävele ulos.\n");
         valitsin = lukija.nextInt();
         switch (valitsin){
             
@@ -43,8 +44,12 @@ public class UI {
             System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
             return "exit";
         }
-            
             case 2:
+                
+                System.out.println("Levyhyllyssä on:\n----------------------------\n");
+            return haluttulevy;
+                
+            case 3:
                 return "exit";
             
         }

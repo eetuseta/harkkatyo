@@ -20,7 +20,9 @@ public class UI {
     
     public String Aloitalevykauppa(){
         int valitsin;
-        System.out.println("Olet levykaupassa, haluatko kysyä myyjältä artistia vai kävellä ulos? \n1 Kysy myyjältä artistia\n2 Kävele ulos:\n");
+        System.out.println("Olet levykaupassa, haluatko kysyä myyjältä artistia vai kävellä ulos? "
+                + "\n1 Kysy myyjältä artistia."
+                + "\n2 Kävele ulos.\n");
         valitsin = lukija.nextInt();
         switch (valitsin){
             

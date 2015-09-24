@@ -69,7 +69,7 @@ public class Levyt {
         }
     }
     public boolean getOnkoLevya(String levy){   
-    if (levy == "frederik"){
+    if ("frederik".equals(levy)){
         return true;
     }   
     else {

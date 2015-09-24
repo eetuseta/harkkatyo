@@ -5,28 +5,34 @@ package harkkatyo;
 import java.util.Scanner;
 
 public class UI {
-    static Scanner lukija = new Scanner(System.in);
+    private static Scanner lukija = new Scanner(System.in);
     
     private Kauppa kauppa;
-    String haluttulevy;
+    private String haluttulevy;
     
-    //Metodit
-    void Kauppa (Kauppa kauppa){
+    //KONSTRUKTORIT
+    //public UI (){}
+    
+    public UI (Kauppa kauppa){
         this.kauppa=kauppa;
     }
+    //METODIT
     
-    public void Aloitalevykauppa(){
+    public String Aloitalevykauppa(){
         System.out.println("Myyjä kysyy: Minkä levyn haluat?");
         haluttulevy=lukija.next();
-        while (kauppa.getOnkolevya(haluttulevy)==false){
+        while (kauppa.getOnkolevya(haluttulevy)==false && !"exit".equals(haluttulevy)){
             System.out.println("Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan sunnuntaiartisteja pidetä hyllyillä notkumassa");
             System.out.println("Myyjä sanoo: Kysyppä jotain muuta: ");
             haluttulevy = lukija.next();
         }
+        if ("exit".equals(haluttulevy)){
+            return haluttulevy;
+        }
+        else {
             System.out.println("Myyjä sanoo: Tottakai meillä on "+haluttulevy+"! Minkälaiseksi levykaupaksi meitä luulet?");
-
-        {
             System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
+            return "exit";
         }
         
     }

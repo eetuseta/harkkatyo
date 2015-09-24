@@ -29,18 +29,18 @@ public class Asiakas {
     }
     
     public boolean onkoLevya (String levy){
-        if (!myyja.getOnkolevya(levy)){
-            System.out.println("voi räkä."); //testisyöte
-            return false;
-        }
-        else {
-            System.out.println("ostanpa pois kuleksimasta.");//testisyöte
+        //if (!myyja.getOnkolevya(levy)){
+            //System.out.println("voi räkä."); //testisyöte
+        //    return false;
+        //}
+        //else {
+            //System.out.println("ostanpa pois kuleksimasta.");//testisyöte
             return true;
-        }
+        //}
         
     }
     public boolean ostaLevy (String levy){
-        if(myyja.getOnkolevya()){
+        if(myyja.getOnkolevya(levy)){
             return true;
         }
         else{

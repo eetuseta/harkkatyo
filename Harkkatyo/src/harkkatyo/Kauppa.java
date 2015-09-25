@@ -8,6 +8,7 @@ public class Kauppa {
     Myyja myyja = new Myyja();
     Asiakas asiakas = new Asiakas();
     Levyt levyt = new Levyt();
+    
     UI ui = new UI(this);
     Lompakko lompakko = new Lompakko(50);
 

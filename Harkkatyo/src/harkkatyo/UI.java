@@ -18,7 +18,13 @@ public class UI {
         this.kauppa=kauppa;
     }
     //METODIT
-    
+    public String Forlauseke(List<Levy> vastaus){
+        String listaus = "levylista";
+        for (Levy albumi : vastaus){
+            listaus = listaus + "\n"+albumi;
+        }
+        return listaus;
+    }            
     
     public String Aloitalevykauppa(){
         int valitsin;
@@ -50,9 +56,12 @@ public class UI {
             break;
         }
         else {
-            List<Levy> vastaus = kauppa.getOnkolevya(haluttulevy);           
+            
+            List<Levy> vastaus = kauppa.getOnkolevya(haluttulevy); 
+            System.out.println(vastaus);
             String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Tottakai meillä on\n"
-                    +vastaus+"! \nMinkälaiseksi levykaupaksi meitä luulet?\n"
+                    + Forlauseke(vastaus)
+                    + "! \nMinkälaiseksi levykaupaksi meitä luulet?\n"
                     + "\n1 Osta tämä levy."
                     + "\n2 Tarkista paljon lompakossasi on varaa."
                     + "\n3 Palaa takaisin.");

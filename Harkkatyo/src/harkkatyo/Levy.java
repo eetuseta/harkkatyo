@@ -20,4 +20,9 @@ public class Levy {
         this.levynNimi=levynNimi;
         this.hinta=hinta;
     }
+
+    @Override
+    public String toString() {
+        return (artisti + " " +levynNimi +" " +hinta +" €");
+    }
 }

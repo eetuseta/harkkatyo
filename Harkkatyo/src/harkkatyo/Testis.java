@@ -8,14 +8,15 @@ package harkkatyo;
 import harkkatyo.Levyt;
 import java.util.Scanner;
 import java.util.*;
-//kikkeli
 
 /**
  *
  * @author jaakk_000
  */
 public class Testis {
+
     static Scanner in = new Scanner(System.in);
+
     /**
      * @param args the command line arguments
      */
@@ -24,9 +25,16 @@ public class Testis {
         Levyt testi = new Levyt();
 
         String haku;
-        
-        haku = in.next();
-        String testihaku = testi.getOnkoLevya(haku);
-        System.out.println(testihaku);
+
+        haku = in.nextLine();
+        List<Levy> testihaku = testi.getOnkoLevya(haku);
+
+        if (testihaku == null) {
+            System.out.println("Ei oo.");
+        } else {
+            for (Levy levy : testihaku) {
+                System.out.println(levy);
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 package harkkatyo;
+
 import java.io.*;
 import java.util.*;
 /*
@@ -12,52 +13,54 @@ import java.util.*;
  * @author Jaakkoen
  */
 public class Levyt {
+
     ArrayList<Levy> levyt = new ArrayList();
     String artisti, levynNimi;
-    int hinta;    
+    int hinta;
     Levy levy = null;
 
     //konstruktori
     public Levyt() {
         lue();
     }
-    
-    private void lue(){
-        try(FileReader fr = new FileReader("resources\\testilevyt.txt");
-            BufferedReader br = new BufferedReader(fr)){
+
+    private void lue() {
+        try (FileReader fr = new FileReader("resources\\testilevyt.txt");
+                BufferedReader br = new BufferedReader(fr)) {
             String rivi = br.readLine();
-            
-            while(rivi != null){
+
+            while (rivi != null) {
                 String[] tiedot = rivi.split("-");
                 artisti = tiedot[0];
                 levynNimi = tiedot[1];
                 hinta = Integer.parseInt(tiedot[2]);
-            
+
                 levy = new Levy(artisti, levynNimi, hinta);
                 levyt.add(levy);
                 rivi = br.readLine();
             }
-        }    
-        catch(Exception e){
+        } catch (Exception e) {
         }
-    
-    //testi syntyykö kaikki levyt
-        for(Levy levy : levyt){
-            System.out.println(levy.artisti+" : "+levy.levynNimi+" "+levy.hinta +"€");
+
+        //testi syntyykö kaikki levyt
+        for (Levy levy : levyt) {
+            System.out.println(levy.artisti + " : " + levy.levynNimi + " " + levy.hinta + "€");
+        }
     }
-    }
-    public String getOnkoLevya(String haku){   
-        String tulos = "Ei oo.";
-        
-        for(Levy levy : levyt){
+
+    public List<Levy> getOnkoLevya(String haku) {
+        ArrayList<Levy> hakutulos = new ArrayList();
+        String tulos = null;
+
+        for (Levy levy : levyt) {
             if (haku.equalsIgnoreCase(levy.artisti) || haku.equalsIgnoreCase(levy.levynNimi)) {
-            tulos = (levy.artisti+" "+levy.levynNimi+" "+levy.hinta+"€");
+                hakutulos.add(levy);
             }
         }
-        return tulos;
+        if (hakutulos.size() == 0) {
+            return null;
+        }
+        return hakutulos;
     }
-        
 
 }
-
-    

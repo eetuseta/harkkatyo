@@ -41,7 +41,7 @@ public class UI {
         case 1: //Aloitusvalitsimen
             
         haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");        
-        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("palaa") && !haluttulevy.equals("exit")){
+        while (kauppa.getOnkolevya(haluttulevy)==null && !haluttulevy.equals("palaa") && !haluttulevy.equals("exit")){
             JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan "
                     + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
             haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");            

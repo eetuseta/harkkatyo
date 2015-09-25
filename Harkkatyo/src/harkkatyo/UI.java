@@ -3,6 +3,7 @@
 package harkkatyo;
 
 import java.util.Scanner;
+import javax.swing.*;
 
 public class UI {
     private static Scanner lukija = new Scanner(System.in);
@@ -18,35 +19,39 @@ public class UI {
     }
     //METODIT
     
+    
     public String Aloitalevykauppa(){
         int valitsin;
-        System.out.println("Olet levykaupassa, haluatko kysyä myyjältä artistia vai kävellä ulos? "
+        String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit', ja voit palata "
+                + "takaisin kirjoittamalla 'palaa'.\n\nAstuit sisään levykauppaan, "
+                + "haluatko kysyä myyjältä artistia vai kävellä ulos? "
                 + "\n1 Kysy myyjältä artistia."
                 + "\n2 Selaa levyjä hyllystä."
                 + "\n3 Kävele ulos.\n");
-        valitsin = lukija.nextInt();
+        valitsin = Integer.parseInt(aloitus);
         switch (valitsin){
             
             case 1:
-        System.out.println("Myyjä kysyy: Minkä levyn haluat?");
-        haluttulevy=lukija.next();
+        haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");
+        
         while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("exit")){
-            System.out.println("Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan sunnuntaiartisteja pidetä hyllyillä notkumassa");
-            System.out.println("Myyjä sanoo: Kysyppä jotain muuta: ");
-            haluttulevy = lukija.next();
-        }
+            JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan "
+                    + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
+            haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");
+            
+            }
         if (haluttulevy.equals("exit")){
             return haluttulevy;
         }
         else {
             String vastaus = kauppa.getOnkolevya(haluttulevy);
-            System.out.println("Myyjä sanoo: Tottakai meillä on "+vastaus+"! Minkälaiseksi levykaupaksi meitä luulet?");
-            System.out.println("Myyjä sanoo: Menehän nyt siitä matkoihisi");
-            return "exit";
+            JOptionPane.showMessageDialog(null, "Myyjä sanoo: Tottakai meillä on "
+                    +vastaus+"! Minkälaiseksi levykaupaksi meitä luulet?");
+            break;
         }
             case 2:
                 
-                System.out.println("Levyhyllyssä on:\n----------------------------\n");
+                JOptionPane.showMessageDialog(null, "Levyhyllyssä on:\n----------------------------\n");
             return haluttulevy;
                 
             case 3:

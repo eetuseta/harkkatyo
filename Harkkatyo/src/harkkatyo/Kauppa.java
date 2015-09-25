@@ -1,5 +1,6 @@
 // Main ohjelma, sekä kauppa class jonka kautta kaikki tieto kulkee UI:lta Olioille
 package harkkatyo;
+import java.util.*;
 
 public class Kauppa {
 
@@ -19,7 +20,7 @@ public class Kauppa {
         } while (!ui.Aloitalevykauppa().equals("exit"));   //Ohjelma loppuu
     }
 
-    public String getOnkolevya(String haluttulevy) {
+    public List<Levy> getOnkolevya(String haluttulevy) {
         return asiakas.onkoLevya(haluttulevy);
 
     }

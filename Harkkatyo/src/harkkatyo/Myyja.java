@@ -1,5 +1,5 @@
 package harkkatyo;
-
+import java.util.*;
 //Myyjä joka osaa kysyä Levyt-classilta onko jotain levyä
 //Osaa vastata kysyttäessä onko jotain levyä getOnkolevya
 
@@ -18,7 +18,7 @@ public class Myyja {
     public void Levyt(Levyt levyt){
         this.levyt=levyt;
     }
-    public String getOnkolevya(String levy){
+    public List<Levy> getOnkolevya(String levy){
         return levyt.getOnkoLevya(levy);
     }
 

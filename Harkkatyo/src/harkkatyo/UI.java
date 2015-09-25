@@ -2,7 +2,7 @@
 
 package harkkatyo;
 
-import java.util.Scanner;
+import java.util.*;
 import javax.swing.*;
 
 public class UI {
@@ -50,7 +50,7 @@ public class UI {
             break;
         }
         else {
-            String vastaus = kauppa.getOnkolevya(haluttulevy);           
+            List<Levy> vastaus = kauppa.getOnkolevya(haluttulevy);           
             String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Tottakai meillä on\n"
                     +vastaus+"! \nMinkälaiseksi levykaupaksi meitä luulet?\n"
                     + "\n1 Osta tämä levy."

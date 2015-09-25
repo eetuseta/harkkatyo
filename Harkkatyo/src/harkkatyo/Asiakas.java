@@ -1,6 +1,6 @@
 package harkkatyo;
 
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Asiakas {
@@ -25,7 +25,7 @@ public class Asiakas {
         this.myyja = myyja;
     }
     //levyn kysely
-    public String onkoLevya(String levy) {
+    public List<Levy> onkoLevya(String levy) {
         return myyja.getOnkolevya(levy);
 
     }

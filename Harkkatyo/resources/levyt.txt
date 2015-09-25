@@ -19,12 +19,12 @@ AC/DC-Ballbreaker-15
 Alice Cooper-Elected-15
 Alice Cooper-Trash-10
 Alice Cooper-Billion Dollar Babies-15
-Apulanta	Syita ja seurauksia - 30 parasta	
-Audioslave	Audioslave			 
-Audioslave	Be Yourself			
-Audioslave	Out Of Exile			 
-Audioslave	Revelations			 
-Bad Religion	Suffer			 
+Apulanta-Syita ja seurauksia-10
+Audioslave-Audioslave-15
+Audioslave-Be Yourself-15
+Audioslave-Out Of Exile-15
+Audioslave-Revelations-15
+Bad Religion-Suffer
 Bad Religion	No Control			 
 Bad Religion	Against The Grain			 
 Bad Religion	Generator			 

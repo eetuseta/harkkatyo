@@ -5,8 +5,9 @@ package harkkatyo;
 
 public class Myyja {
     
-    
+    Kassa kassa = new Kassa();
     private Levyt levyt;
+    
     
     public Myyja (){
     }

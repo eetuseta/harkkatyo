@@ -5,13 +5,16 @@ package harkkatyo;
 
 public class Myyja {
     
-    Kassa kassa = new Kassa();
+    Kassa kassa = new Kassa(100);   
     private Levyt levyt;
     
     
     public Myyja (){
     }
     //Metodit
+    public void Maksakassaan(double summa){
+        kassa.Maksa(summa);
+    }
     public void Levyt(Levyt levyt){
         this.levyt=levyt;
     }

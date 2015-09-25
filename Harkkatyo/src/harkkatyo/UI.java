@@ -28,33 +28,56 @@ public class UI {
                 + "\n1 Kysy myyjältä artistia."
                 + "\n2 Selaa levyjä hyllystä."
                 + "\n3 Kävele ulos.\n");
+        /*while (!aloitus.equals("1")||!aloitus.equals("2")||!aloitus.equals("3")||
+                !aloitus.equals("exit")||!aloitus.equals("palaa")){
+            if (aloitus.equals("exit") || !aloitus.equals("palaa")){
+        return aloitus;    
+        }
+        }*/
         valitsin = Integer.parseInt(aloitus);
-        switch (valitsin){
+ 
+        switch (valitsin){ 
             
-            case 1:
-        haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");
-        
-        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("exit")){
+        case 1: //Aloitusvalitsimen
+            
+        haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");        
+        while (kauppa.getOnkolevya(haluttulevy).equals("Ei oo.") && !haluttulevy.equals("palaa") && !haluttulevy.equals("exit")){
             JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan "
                     + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
-            haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");
-            
+            haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");            
             }
-        if (haluttulevy.equals("exit")){
-            return haluttulevy;
-        }
-        else {
-            String vastaus = kauppa.getOnkolevya(haluttulevy);
-            JOptionPane.showMessageDialog(null, "Myyjä sanoo: Tottakai meillä on "
-                    +vastaus+"! Minkälaiseksi levykaupaksi meitä luulet?");
+        if (haluttulevy.equals("palaa") || haluttulevy.equals("exit")){
             break;
         }
-            case 2:
+        else {
+            String vastaus = kauppa.getOnkolevya(haluttulevy);           
+            String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Tottakai meillä on\n"
+                    +vastaus+"! \nMinkälaiseksi levykaupaksi meitä luulet?\n"
+                    + "\n1 Osta tämä levy."
+                    + "\n2 Tarkista paljon lompakossasi on varaa."
+                    + "\n3 Palaa takaisin.");
+            int valitsin2 = Integer.parseInt(levynostovalitsin); 
+                switch (valitsin2){
+                    
+                    case 1: //Levynostovalitsimen
+                    JOptionPane.showMessageDialog(null, "OSTOTAPAHTUMA");
+                    break;
+                        
+                    case 2: //Levynostovalitsimen
+                    JOptionPane.showMessageDialog(null, "LOMPAKON TILANNE");
+                    break;
+                        
+                    case 3://Levynostovalitsimen
+                    break;       
+                }
+            break;
+        }
+            case 2: //Aloitusvalitsin
                 
                 JOptionPane.showMessageDialog(null, "Levyhyllyssä on:\n----------------------------\n");
             return haluttulevy;
                 
-            case 3:
+            case 3: //Aloitusvalitsin
                 return "exit";
             
         }

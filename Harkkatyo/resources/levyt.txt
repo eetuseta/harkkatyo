@@ -436,110 +436,90 @@ Gary Moore-Still Got The Blues-15
 Morbid Angel-Altars of Madness-20
 Morbid Angel-Blessed Are the Sick-20
 Morbid Angel-Covenant-20
-Morcheeba	Big Calm			 
-Morcheeba	Charango			 
-Morissette, Alanis	Jagged Little Pill			 
-Morrison, Van	Astral Weeks			 
-Morrison, Van	Moondance			 
-Morrison, Van	Moondance			 
-Morrison, Van	Tupelo Honey			 
-Motorhead	Motorhead			 
-Motorhead	Bomber			 
-Motorhead	Overkill			 
-Motorhead	Ace Of Spades			 
-Motorhead	No Sleep 'til Hammersmith	
-Musta Paraati	Peilitalossa			 
-My Dying Bride	As The Flower Withers			 
-My Dying Bride	Turn Loose The Swans			 
-My Dying Bride	The Angel And The Dark River			 
-My Dying Bride	Trinity			
-My Dying Bride	Like Gods Of The Sun			 
-My Dying Bride	34.788%... Complete			 
-My Dying Bride	The Light At The End Of The World			 
-My Dying Bride	The Dreadful Hours			
-My Dying Bride	The Voice Of The Wretched			
-My Dying Bride	Songs Of Darkness, Words Of Light		
+Morcheeba-Big Calm-15
+Morcheeba-Charango-15
+Alanis Morissette-Jagged Little Pill-15
+Van Morrison-Astral Weeks-15
+Van Morrison-Moondance-15
+Van Morrison-Moondance-15
+Van Morrison-Tupelo Honey-10
+Motorhead-Motorhead-15
+Motorhead-Bomber-20
+Motorhead-Overkill-15
+Motorhead-Ace Of Spades-20
+Motorhead-No Sleep 'til Hammersmith-15
+Musta Paraati-Peilitalossa-15
+My Dying Bride-As The Flower Withers-10
+My Dying Bride-Turn Loose The Swans-10
+My Dying Bride-The Angel And The Dark River-10
+My Dying Bride-Trinity-10
+My Dying Bride-Like Gods Of The Sun-10
 Napalm Death-Scum-20
 Napalm Death-Harmony Corruption-20
-Napalm Death	Mass Appeal Madness			 
-Napalm Death	Bootlegged In Japan			 
-Napalm Death	Order Of The Leech			
-Nasum	Helvete			 
-Nasum	Doombringer			 
-Neurosis	Times Of Grace			 
-Neurosis	Sovereign			
-Neurosis	A Sun That Never Sets	
-Nile	In Their Darkened Shrines			 
-Nine Inch Nails	With Teeth			 
-Nirvana	Bleach			 
-Nirvana	Nevermind			 
-Nirvana	Incesticide			 
-Nirvana	In Utero			 
-Nirvana	Unplugged In New York			 
-Nirvana	From The Muddy Banks Of The Wishkah			
-No Doubt	Return Of Saturn			 
-No Doubt	The Singles -			 
-NoFX	Regaining Unconsciousness					 
-NoMeansNo	Small Parts Isolated And Destroyed			 
-NoMeansNo	Wrong			 
-NoMeansNo	The Power Of Positive Thinking			 
-NoMeansNo	Oh, Canaduh			
-Nugent, Ted	Scream Dream			 
-Nylon Beat	Nylon Beat			 
-Nylon Beat	Satasen laina			 
-Nylon Beat	Extreme			 
-Oldfield, Mike	Tubular Bells			 
-Oldfield, Mike	Ommadawn			 
-Op:l Bastards	The Job			 
-Opeth	Orchid			 
-Opeth	Morningrise			 
-Opeth	My Arms, Your Hearse			 
-Opeth	Still Life			 
-Opeth	Blackwater Park			 
-Opeth	Deliverance			 
-Opeth	Damnation			 
-Opeth	Ghost Reveries			 
-Pain	Eleanor Rigby		S	 
-Pain	Just Hate Me		S	 
-Pain Of Salvation	Entropia			 
-Pain Of Salvation	One Hour By The Concrete Lake			 
-Pain Of Salvation	The Perfect Element			 
-Pain Of Salvation	Remedy Lane			 
-Paleface	Quarter Past			 
-Paradise Lost	Shades Of God			 
-Paradise Lost	Icon			 
-Paradise Lost	Draconian Times			 
-Pentagram	Day Of Reckoning			 
-Pentagram	Be Forewarned			 
-Pentagram	Turn To Stone			 
-Pet Shop Boys	Nightlife			 
-Piirpauke	Piirpauke			 
-Piirpauke	Live			 
-Pink Floyd	The Piper At The Gates Of Dawn			 
-Pink Floyd	A Saucerful Of Secrets			 
-Pink Floyd	More			
-Pink Floyd	Ummagumma		2	
-Pink Floyd	Atom Heart Mother			 
-Pink Floyd	Meddle			 
-Pink Floyd	Meddle			 
-Pink Floyd	Relics			 
-Pink Floyd	Obscured By Clouds			 
-Pink Floyd	Dark Side Of The Moon			 
-Pink Floyd	Dark Side Of The Moon			 
-Pink Floyd	Wish You Were Here			 
-Pink Floyd	Wish You Were Here			 
-Pink Floyd	Animals			 
-Pink Floyd	Animals			 
-Pink Floyd	The Wall		2	 
-Pink Floyd	The Wall		2	 
-Pink Floyd	The Final Cut			 
-Pink Floyd	A Momentary Lapse Of Reason			 
-Pink Floyd	P.U.L.S.E		2	
-Pink Floyd	Live At Pompeii		DVD	
-Pink Floyd	Live Anthology		DVD	 
-Pink Floyd	P.U.L.S.E		2DVD	 
-Pohjola, Pekka	Pihkasilma kaarnakorva			 
-Pohjola, Pekka	Harakka Bialoipokku			 
+Napalm Death-Mass Appeal Madness-15
+Napalm Death-Order Of The Leech-10
+Nasum-Helvete-15
+Nasum-Doombringer-15
+Neurosis-Times Of Grace-10
+Neurosis-Sovereign-10
+Neurosis-A Sun That Never Sets-10
+Nile-In Their Darkened Shrines-10
+Nine Inch Nails-With Teeth-10
+Nirvana-Bleach-15
+Nirvana-Nevermind-20
+Nirvana-Incesticide-10
+Nirvana-In Utero-15
+Nirvana-Unplugged In New York-10
+No Doubt-Return Of Saturn-10
+NoFX-Regaining Unconsciousness-10
+NoMeansNo-Small Parts Isolated And Destroyed-10
+NoMeansNo-Wrong-10
+NoMeansNo-The Power Of Positive Thinking-10
+Ted Nugent-Scream Dream-10
+Ted Nugent-If You Can't Lick 'em, Lick 'em-15
+Nylon Beat-Nylon Beat-10
+Nylon Beat-Satasen Laina-10
+Nylon Beat-Extreme-10
+Mike Oldfield-Tubular Bells-20
+Mike Oldfield-Ommadawn-10
+Opeth-Orchid-15
+Opeth-Morningrise-15
+Opeth-My Arms, Your Hearse-15
+Opeth-Still Life-10
+Opeth-Blackwater Park-15
+Opeth-Deliverance-10
+Opeth-Damnation-15
+Opeth-Ghost Reveries-10
+Pain-Eleanor Rigby-10
+Pain Of Salvation-Entropia-10
+Pain Of Salvation-One Hour By The Concrete Lake-10
+Pain Of Salvation-The Perfect Element-10
+Paleface-Quarter Past-15
+Paradise Lost-Shades Of God-20
+Paradise Lost-Icon-15
+Paradise Lost-Draconian Times-15
+Pentagram-Day Of Reckoning-15
+Pentagram-Be Forewarned-10
+Pentagram-Turn To Stone-10
+Pet Shop Boys-Nightlife-10
+Piirpauke-Piirpauke-15
+Pink Floyd-The Piper At The Gates Of Dawn-20
+Pink Floyd-A Saucerful Of Secrets-15
+Pink Floyd-More-15
+Pink Floyd-Ummagumma-20
+Pink Floyd-Atom Heart Mother-20
+Pink Floyd-Meddle-15
+Pink Floyd-Relics-15
+Pink Floyd-Obscured By Clouds-15
+Pink Floyd-Dark Side Of The Moon-20
+Pink Floyd-Wish You Were Here-20
+Pink Floyd-Animals-15
+Pink Floyd-The Wall-20
+Pink Floyd-The Final Cut-15
+Pink Floyd-A Momentary Lapse Of Reason-15
+Pink Floyd-P.U.L.S.E-20
+Pekka Pohjola-Pihkasilma kaarnakorva-15
+Pekka Pohjola-Harakka Bialoipokku
 Pohjola, Pekka	Urban Tango			 
 Pohjola, Pekka	Jokamies			 
 Police, the	Reggatta de Blanc			 

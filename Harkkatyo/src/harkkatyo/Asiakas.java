@@ -22,7 +22,6 @@ public class Asiakas {
     }
 
     //levyjen konstruktori
-
     public void Levyt(Levyt levyt) {
         this.levyt = levyt;
     }
@@ -55,37 +54,54 @@ public class Asiakas {
 
     public String selaaLevja(String selaus) {
         String palautus = "";
-        String merkki = selaus.toUpperCase(); 
-        
+        String merkki = selaus.toUpperCase();
+
         char cmerkki = merkki.charAt(0);
         for (Levy i : levyt.levyt) {
             if (cmerkki == ((i.artisti).charAt(0))) {
                 palautus = palautus + "\n" + i;
-                
+
             }
-            
 
         }
-        if (palautus.length()== 0){
+        if (palautus.length() == 0) {
             palautus = "Valitettavasti tämän kirjaimen alla ei ole levyjä.";
-            
+
         }
         return palautus;
     }
+
+    public ArrayList<Levy> tulostaLevja(String selaus) {
+        String palautus = "";
+        String merkki = selaus.toUpperCase();
+        ArrayList<Levy> listaus = new ArrayList();
+        char cmerkki = merkki.charAt(0);
+        for (Levy i : levyt.levyt) {
+            if (cmerkki == ((i.artisti).charAt(0))) {
+                listaus.add(i);
+
+            }
+
+        }
+        if (palautus.length() == 0) {
+            palautus = "Valitettavasti tämän kirjaimen alla ei ole levyjä.";
+
+        }
+        return listaus;
+    }
 }
-    
 
-    /*ArrayList<Levy> hakutulos = new ArrayList();
-     String loytyi = null;
 
-     for (Levy levy : levyt) {
-     if (haku.equalsIgnoreCase(levy.artisti) || haku.equalsIgnoreCase(levy.levynNimi)) {
-     hakutulos.add(levy);
-     }
-     }
-     if (hakutulos.size() == 0) {
-     return null;
-     }
-     return hakutulos;
-     }*/
+/*ArrayList<Levy> hakutulos = new ArrayList();
+ String loytyi = null;
 
+ for (Levy levy : levyt) {
+ if (haku.equalsIgnoreCase(levy.artisti) || haku.equalsIgnoreCase(levy.levynNimi)) {
+ hakutulos.add(levy);
+ }
+ }
+ if (hakutulos.size() == 0) {
+ return null;
+ }
+ return hakutulos;
+ }*/

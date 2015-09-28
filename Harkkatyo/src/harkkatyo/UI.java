@@ -152,8 +152,8 @@ public class UI {
                 break;
 
             case 3: //Aloitusvalitsin
-
                 haluttulevy = "exit";
+                return "exit";
         }
         }
         while (!haluttulevy.equals("exit"));

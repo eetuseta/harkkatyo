@@ -20,6 +20,9 @@ public class Asiakas {
     public Asiakas() {
 
     }
+    public void Lompakko(Lompakko lompakko){
+        this.lompakko = lompakko;
+    }
     //myyjän konstruktori
     public void Myyja(Myyja myyja) {
         this.myyja = myyja;

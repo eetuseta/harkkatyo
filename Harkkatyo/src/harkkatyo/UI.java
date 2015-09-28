@@ -12,8 +12,10 @@ public class UI {
     private String haluttulevy;
     private boolean pysylevynostossa;
     List<Levy> vastaus;
-    String kakat;
-    int numero;
+    private String selausvalinta;
+    private boolean pysyselauksessa;
+    private int ostettavanhinta = 0;
+
 
 
     //KONSTRUKTORIT
@@ -77,7 +79,6 @@ public class UI {
 
                                 case 1: //Levynostovalitsimen
                                     String ostettavalevy;
-                                    int ostettavanhinta = 0;
                                     ostettavalevy = JOptionPane.showInputDialog("Myyja sanoo: Minkä levyn haluat?\n"
                                             + Forlauseke(vastaus) + "/n");
                                     for (Levy oikea : vastaus) {
@@ -110,8 +111,40 @@ public class UI {
 
             case 2: //Aloitusvalitsin
                 String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
+                List<Levy> selauslista = 
+                selausvalinta = JOptionPane.showInputDialog(null, kauppa.asiakas.selaaLevja(selaus)+"\n"
+                        + "\nKirjoita levy, jonka haluat ostaa\n"
+                        + "tai\n"
+                        + "2 Selaa muita levyjä\n"
+                        + "3 Poistu hyllyjen luota");
+                if (!selausvalinta.equals(1) || !selausvalinta.equals(2) || !selausvalinta.equals(3)){
+                    for (Levy oikea : kauppa.asiakas.selaaLevja(selaus)) {
+                                        if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
+                                            ostettavanhinta = oikea.hinta;
+                                        }
+                                    }
+                                    if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
+                                    JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
+                                            + "\n\nLompakkoosi jäi vielä "+ kauppa.lompakko.getRahamaara()+"euroa.");
+                                    }
+                                    else{
+                                        JOptionPane.showMessageDialog(null, ostettavanhinta);
+                                            }
+                                    pysyselauksessa = true;
+                                    break;
+                    
+                }
+                else {
+                    int valitsin3 = Integer.parseInt(selausvalinta);
+                }
+                switch (selausvalinta){
+                    case 1:
+                        pysyselauksessa = true;
+                        break;
+                    case 2: 
+                        
+                }
                 
-                JOptionPane.showMessageDialog(null, kauppa.asiakas.selaaLevja(selaus));
                 break;
 
             case 3: //Aloitusvalitsin

@@ -81,14 +81,13 @@ public class UI {
                                     ostettavalevy = JOptionPane.showInputDialog("Myyja sanoo: Minkä levyn haluat?\n"
                                             + Forlauseke(vastaus) + "/n");
                                     for (Levy oikea : vastaus) {
-                                        if (ostettavalevy.equals(oikea.levynNimi)) {
+                                        if (ostettavalevy.equalsIgnoreCase(oikea.levynNimi)) {
                                             ostettavanhinta = oikea.hinta;
-
                                         }
                                     }
                                     if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                            + "\n\nLompakkoosi jäi vielä ");
+                                            + "\n\nLompakkoosi jäi vielä "+ kauppa.lompakko.getRahamaara()+"euroa.");
                                     }
                                     else{
                                         JOptionPane.showMessageDialog(null, ostettavanhinta);
@@ -101,6 +100,7 @@ public class UI {
                                     pysylevynostossa = true;
 
                                 case 3://Levynostovalitsimen
+                                    pysylevynostossa = false;
                                     break;
                             }
                         } while (pysylevynostossa == true);
@@ -111,16 +111,11 @@ public class UI {
             case 2: //Aloitusvalitsin
                 String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
                 
-
                 JOptionPane.showMessageDialog(null, kauppa.asiakas.selaaLevja(selaus));
                 break;
 
             case 3: //Aloitusvalitsin
-                kakat = JOptionPane.showInputDialog(null, "Anna kakka: ");
-                numero = Integer.parseInt(kakat);
-                if (kauppa.asiakas.maksaLevy(numero)){
-                JOptionPane.showMessageDialog(null, "Kakka toimi! ");
-                }
+
                 return "exit";
 
         }

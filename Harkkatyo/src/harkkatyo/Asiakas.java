@@ -8,7 +8,7 @@ public class Asiakas {
     //muuttujat
     private Myyja myyja;
     private Lompakko lompakko;
-    public int hinta;
+    //public int hinta;
     private Levyt levyt;
 
     public String levy;//teksti
@@ -44,9 +44,9 @@ public class Asiakas {
     }
 
     //levy halutaan ostaa, ja ostetaan jos on rahaa.
-    public boolean maksaLevy(int rahamaara) {
-        if (lompakko.getRahamaara() > rahamaara) {
-            lompakko.vahenna(rahamaara);
+    public boolean maksaLevy(int hinta) {
+        if (lompakko.getRahamaara() > hinta) {
+            lompakko.vahenna(hinta);
             return true;
         } else {
             return false;

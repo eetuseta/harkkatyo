@@ -9,26 +9,26 @@ package harkkatyo;
  * @author jaakk_000
  */
 public class Lompakko {
-    private double rahamaara=100;
+    private int rahamaara=100;
     
     //konstruktorit
     public Lompakko(){
             }
-    public Lompakko(double rahamaara){
+    public Lompakko(int rahamaara){
         this.rahamaara=rahamaara;
     }
     
     //metodit
-    public void setRaha(double rahamaara){
+    public void setRaha(int rahamaara){
         this.rahamaara=rahamaara;
     }
-    public double getRahamaara(){
+    public int getRahamaara(){
         return rahamaara;
     }
-    public void lisaa(double pano){
+    public void lisaa(int pano){
         rahamaara=rahamaara+pano;
     }
-    boolean vahenna(double otto){
+    boolean vahenna(int otto){
         if (otto>rahamaara){
             System.out.println("Ei ole mistä ottaa, sori...");
             return false;

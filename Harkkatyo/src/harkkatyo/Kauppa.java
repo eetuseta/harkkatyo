@@ -9,6 +9,7 @@ public class Kauppa {
     Asiakas asiakas = new Asiakas();
     Levyt levyt = new Levyt();
     
+    
     UI ui = new UI(this);
     Lompakko lompakko = new Lompakko(50);
 
@@ -17,6 +18,7 @@ public class Kauppa {
         asiakas.Myyja(myyja);
         asiakas.Levyt(levyt);
         myyja.Levyt(levyt);
+        asiakas.Lompakko(lompakko);
         do {
             ui.Aloitalevykauppa();
         } while (!ui.Aloitalevykauppa().equals("exit"));   //Ohjelma loppuu

@@ -62,5 +62,4 @@ public class Levyt {
         }
         return hakutulos;
     }
-
 }

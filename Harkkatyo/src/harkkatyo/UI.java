@@ -12,6 +12,8 @@ public class UI {
     private String haluttulevy;
     private boolean pysylevynostossa;
     List<Levy> vastaus;
+    String kakat;
+
 
     //KONSTRUKTORIT
     //public UI (){}
@@ -78,14 +80,18 @@ public class UI {
                                     ostettavalevy = JOptionPane.showInputDialog("Myyja sanoo: Minkä levyn haluat?\n"
                                             + Forlauseke(vastaus) + "/n");
                                     for (Levy oikea : vastaus) {
-                                        if (ostettavalevy == oikea.levynNimi) {
+                                        if (ostettavalevy.equals(oikea.levynNimi)) {
                                             ostettavanhinta = oikea.hinta;
+
                                         }
                                     }
-                                    if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true);
+                                    if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                            + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + "euroa");
-
+                                            + "\n\nLompakkoosi jäi vielä ");
+                                    }
+                                    else{
+                                        JOptionPane.showMessageDialog(null, ostettavanhinta);
+                                            }
                                     pysylevynostossa = true;
                                     break;
 
@@ -109,6 +115,10 @@ public class UI {
                 break;
 
             case 3: //Aloitusvalitsin
+                JOptionPane.showInputDialog(null, "Anna kakka: ");
+                int kakka = Integer.parseInt(kakat);
+                kauppa.asiakas.maksaLevy(kakka);
+                JOptionPane.showMessageDialog(null, "Kakka toimi! "+kauppa.lompakko.getRahamaara());
                 return "exit";
 
         }

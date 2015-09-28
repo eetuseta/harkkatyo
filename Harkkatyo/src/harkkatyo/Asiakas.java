@@ -53,9 +53,9 @@ public class Asiakas {
         }
     }
 
-    public String selaaLevja() {
+    public String selaaLevja(String selaus) {
         String palautus = "";
-        String merkki = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
+        String merkki = selaus; 
         char cmerkki = merkki.charAt(0);
         for (Levy i : levyt.levyt) {
             if (cmerkki == ((i.artisti).charAt(0))) {
@@ -64,6 +64,10 @@ public class Asiakas {
             }
             
 
+        }
+        if (palautus.length()== 0){
+            palautus = "Valitettavasti tämän kirjaimen alla ei ole levyjä.";
+            
         }
         return palautus;
     }

@@ -15,6 +15,7 @@ public class Kauppa {
         //Metodit
     public void kaynnista() { //Tämä on ensimmäinen ohjelman osa, käynnistää UI:n
         asiakas.Myyja(myyja);
+        asiakas.Levyt(levyt);
         myyja.Levyt(levyt);
         do {
             ui.Aloitalevykauppa();

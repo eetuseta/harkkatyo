@@ -53,6 +53,7 @@ public class UI {
                         && !haluttulevy.equals("exit")) {
                     JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan "
                             + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
+                    }
                     haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");
                     if (haluttulevy.equals("palaa") || haluttulevy.equals("exit")) {
                         break;
@@ -97,7 +98,7 @@ public class UI {
                             }
                         } while (pysylevynostossa == true);
                     }
-                }
+                
                 break;
 
             case 2: //Aloitusvalitsin

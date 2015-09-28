@@ -59,7 +59,7 @@ public class UI {
                     } else {
                         do {
                             vastaus = kauppa.getOnkolevya(haluttulevy);
-                            pysylevynostossa = false;
+                            pysylevynostossa = true;
 
                             System.out.println(vastaus);
                             String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"

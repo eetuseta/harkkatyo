@@ -37,24 +37,23 @@ public class UI {
     public String Aloitalevykauppa() {
         int valitsin;
         do {
-        String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit', ja voit palata "
-                + "takaisin kirjoittamalla 'palaa'.\n\nAstuit sisään levykauppaan, "
+        String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit'."
+                + "\n\nAstuit sisään levykauppaan, "
                 + "haluatko kysyä myyjältä artistia vai kävellä ulos? "
                 + "\n1 Kysy myyjältä artistia."
                 + "\n2 Selaa levyjä hyllystä."
                 + "\n3 Kävele ulos.\n");
-        /*while (!aloitus.equals("1")||!aloitus.equals("2")||!aloitus.equals("3")||
-         !aloitus.equals("exit")||!aloitus.equals("palaa")){
-         if (aloitus.equals("exit") || !aloitus.equals("palaa")){
-         return aloitus;    
-         }
-         }*/
+        if (aloitus.equals("exit")){
+            return "exit";
+        }
+        
         valitsin = Integer.parseInt(aloitus);
 
         switch (valitsin) {
 
             case 1: //Aloitusvalitsimen
-
+                
+                //do {
                 haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");
                 while (kauppa.getOnkolevya(haluttulevy) == null && !haluttulevy.equals("palaa")
                         && !haluttulevy.equals("exit")) {
@@ -62,7 +61,7 @@ public class UI {
                             + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
                     }
                     haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");
-                    if (haluttulevy.equals("palaa") || haluttulevy.equals("exit")) {
+                    if (haluttulevy.equals("palaa") || haluttulevy.equals("exit") || haluttulevy == null) {
                         break;
                     } else {
                         do {
@@ -102,11 +101,12 @@ public class UI {
 
                                 case 3://Levynostovalitsimen
                                     pysylevynostossa = false;
+                                    
                                     break;
                             }
                         } while (pysylevynostossa == true);
                     }
-                
+                //}while (!haluttulevy.equals("exit"));
                 break;
 
             case 2: //Aloitusvalitsin
@@ -153,8 +153,7 @@ public class UI {
 
             case 3: //Aloitusvalitsin
 
-                return "exit";
-                
+                haluttulevy = "exit";
         }
         }
         while (!haluttulevy.equals("exit"));

@@ -53,7 +53,7 @@ public class Asiakas {
         }
     }
 
-    public String selaaLevja(String selaa) {
+    public String selaaLevja() {
         String palautus = "";
         String merkki = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z");
         char cmerkki = merkki.charAt(0);

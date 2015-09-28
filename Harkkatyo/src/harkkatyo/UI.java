@@ -101,8 +101,10 @@ public class UI {
                 break;
 
             case 2: //Aloitusvalitsin
+                String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
+                
 
-                JOptionPane.showMessageDialog(null, kauppa.asiakas.selaaLevja());
+                JOptionPane.showMessageDialog(null, kauppa.asiakas.selaaLevja(selaus));
                 break;
 
             case 3: //Aloitusvalitsin

@@ -9,7 +9,7 @@ package harkkatyo;
  * @author jaakk_000
  */
 public class Lompakko {
-    private double rahamaara;
+    private double rahamaara=100;
     
     //konstruktorit
     public Lompakko(){

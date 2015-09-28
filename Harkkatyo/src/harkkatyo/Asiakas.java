@@ -45,8 +45,8 @@ public class Asiakas {
 
     //levy halutaan ostaa, ja ostetaan jos on rahaa.
     public boolean maksaLevy(int rahamaara) {
-        if (lompakko.getRahamaara() > hinta) {
-            lompakko.vahenna(hinta);
+        if (lompakko.getRahamaara() > rahamaara) {
+            lompakko.vahenna(rahamaara);
             return true;
         } else {
             return false;

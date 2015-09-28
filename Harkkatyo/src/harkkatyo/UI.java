@@ -13,6 +13,7 @@ public class UI {
     private boolean pysylevynostossa;
     List<Levy> vastaus;
     String kakat;
+    int numero;
 
 
     //KONSTRUKTORIT
@@ -115,10 +116,11 @@ public class UI {
                 break;
 
             case 3: //Aloitusvalitsin
-                JOptionPane.showInputDialog(null, "Anna kakka: ");
-                int kakka = Integer.parseInt(kakat);
-                kauppa.asiakas.maksaLevy(kakka);
-                JOptionPane.showMessageDialog(null, "Kakka toimi! "+kauppa.lompakko.getRahamaara());
+                kakat = JOptionPane.showInputDialog(null, "Anna kakka: ");
+                numero = Integer.parseInt(kakat);
+                if (kauppa.asiakas.maksaLevy(numero)){
+                JOptionPane.showMessageDialog(null, "Kakka toimi! ");
+                }
                 return "exit";
 
         }

@@ -15,6 +15,7 @@ public class UI {
     private String selausvalinta;
     private boolean pysyselauksessa;
     private int ostettavanhinta = 0;
+    private int valitsin3;
 
 
 
@@ -35,6 +36,7 @@ public class UI {
 
     public String Aloitalevykauppa() {
         int valitsin;
+        do {
         String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit', ja voit palata "
                 + "takaisin kirjoittamalla 'palaa'.\n\nAstuit sisään levykauppaan, "
                 + "haluatko kysyä myyjältä artistia vai kävellä ulos? "
@@ -66,8 +68,6 @@ public class UI {
                         do {
                             vastaus = kauppa.getOnkolevya(haluttulevy);
                             pysylevynostossa = true;
-
-                            System.out.println(vastaus);
                             String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                                     + Forlauseke(vastaus)
                                     + "! \nHaluaisitko ostaa tämän?\n"
@@ -110,15 +110,17 @@ public class UI {
                 break;
 
             case 2: //Aloitusvalitsin
+                do {
                 String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
-                List<Levy> selauslista = 
+                ArrayList<Levy> selauslista = new ArrayList();
+                selauslista = kauppa.asiakas.tulostaLevja(selaus);
                 selausvalinta = JOptionPane.showInputDialog(null, kauppa.asiakas.selaaLevja(selaus)+"\n"
                         + "\nKirjoita levy, jonka haluat ostaa\n"
                         + "tai\n"
                         + "2 Selaa muita levyjä\n"
                         + "3 Poistu hyllyjen luota");
                 if (!selausvalinta.equals(1) || !selausvalinta.equals(2) || !selausvalinta.equals(3)){
-                    for (Levy oikea : kauppa.asiakas.selaaLevja(selaus)) {
+                    for (Levy oikea : selauslista) {
                                         if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
                                             ostettavanhinta = oikea.hinta;
                                         }
@@ -135,24 +137,27 @@ public class UI {
                     
                 }
                 else {
-                    int valitsin3 = Integer.parseInt(selausvalinta);
+                    valitsin3 = Integer.parseInt(selausvalinta);
                 }
-                switch (selausvalinta){
+                switch (valitsin3){
                     case 1:
                         pysyselauksessa = true;
                         break;
                     case 2: 
-                        
+                        pysyselauksessa = false;
+                        break;
                 }
-                
+                }
+                while (pysyselauksessa = true);
                 break;
 
             case 3: //Aloitusvalitsin
 
                 return "exit";
-
+                
         }
-    
+        }
+        while (!haluttulevy.equals("exit"));
     
     return haluttulevy ;
 

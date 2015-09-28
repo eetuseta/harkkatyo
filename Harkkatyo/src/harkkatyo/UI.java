@@ -92,4 +92,9 @@ public class UI {
         }
         return haluttulevy;
     }
+    public void lopetus (){
+        JOptionPane.showMessageDialog(null, "Poistuit levykaupasta, "
+                + "lompakkoosi jäi "+kauppa.lompakko.getRahamaara()+"e."
+                + " ja kaupan kassaan jäi "+kauppa.myyja.kassa.getRahaakassassa()+"e.");
+    }
 }

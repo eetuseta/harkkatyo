@@ -19,7 +19,7 @@ public class UI {
     }
     //METODIT
     public String Forlauseke(List<Levy> vastaus){
-        String listaus = "levylista";
+        String listaus = "Löytyi itseasiassa useampikin:";
         for (Levy albumi : vastaus){
             listaus = listaus + "\n"+albumi;
         }
@@ -55,13 +55,13 @@ public class UI {
         if (haluttulevy.equals("palaa") || haluttulevy.equals("exit")){
             break;
         }
-        else {
-            
+        else {            
             List<Levy> vastaus = kauppa.getOnkolevya(haluttulevy); 
+            
             System.out.println(vastaus);
-            String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Tottakai meillä on\n"
+            String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                     + Forlauseke(vastaus)
-                    + "! \nMinkälaiseksi levykaupaksi meitä luulet?\n"
+                    + "! \nHaluaisitko ostaa tämän?\n"
                     + "\n1 Osta tämä levy."
                     + "\n2 Tarkista paljon lompakossasi on varaa."
                     + "\n3 Palaa takaisin.");

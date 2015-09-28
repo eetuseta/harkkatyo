@@ -25,12 +25,14 @@ public class Kauppa {
         return asiakas.onkoLevya(haluttulevy);
 
     }
+    
 
         //Varsinainen main
     public static void main(String[] args) {
 
         Kauppa kauppa = new Kauppa();       //luodaan kauppaolio
         kauppa.kaynnista();                 //käynnistetään metodi joka käynnistää UI:n 
+        
         System.exit(0);
 
     }

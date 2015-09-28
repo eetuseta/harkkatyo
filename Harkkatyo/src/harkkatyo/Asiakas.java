@@ -55,7 +55,8 @@ public class Asiakas {
 
     public String selaaLevja(String selaus) {
         String palautus = "";
-        String merkki = selaus; 
+        String merkki = selaus.toUpperCase(); 
+        
         char cmerkki = merkki.charAt(0);
         for (Levy i : levyt.levyt) {
             if (cmerkki == ((i.artisti).charAt(0))) {

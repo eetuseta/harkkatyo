@@ -4,7 +4,8 @@ import java.util.*;
 //Osaa vastata kysyttäessä onko jotain levyä getOnkolevya
 
 public class Myyja {
-    
+    //alustetaan muuttujat
+    //lisätään kassaan rahaa
     Kassa kassa = new Kassa(100);   
     private Levyt levyt;
     
@@ -12,12 +13,15 @@ public class Myyja {
     public Myyja (){
     }
     //Metodit
+    //levyn maksun vastaanotto
     public void Maksakassaan(double summa){
         kassa.Maksa(summa);
     }
+    //levylistaus
     public void Levyt(Levyt levyt){
         this.levyt=levyt;
     }
+    //levykysely
     public List<Levy> getOnkolevya(String levy){
         return levyt.getOnkoLevya(levy);
     }

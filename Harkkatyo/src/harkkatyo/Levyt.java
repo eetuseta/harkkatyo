@@ -21,11 +21,12 @@ public class Levyt {
 
     //konstruktori
     public Levyt() {
+        levyt.ensureCapacity(725);
         lue();
     }
 
     private void lue() {
-        try (FileReader fr = new FileReader("resources\\testilevyt.txt");
+        try (FileReader fr = new FileReader("resources\\levyt.txt");
                 BufferedReader br = new BufferedReader(fr)) {
             String rivi = br.readLine();
 
@@ -40,12 +41,13 @@ public class Levyt {
                 rivi = br.readLine();
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
 
         //testi syntyykö kaikki levyt
-        for (Levy levy : levyt) {
+        /*for (Levy levy : levyt) {
             System.out.println(levy.artisti + " : " + levy.levynNimi + " " + levy.hinta + "€");
-        }
+        }*/
     }
 
     public List<Levy> getOnkoLevya(String haku) {

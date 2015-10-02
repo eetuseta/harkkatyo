@@ -1,34 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package harkkatyo;
-/**
- *
- * @author jaakk_000
- */
+
 public class Lompakko {
-    private double rahamaara;
+    //alustetaan lompakkoon rahamäärä
+    private int rahamaara=100;
     
     //konstruktorit
     public Lompakko(){
             }
-    public Lompakko(double rahamaara){
+    //lompakko saa sisäänsä rahaa
+    public Lompakko(int rahamaara){
         this.rahamaara=rahamaara;
     }
     
     //metodit
-    public void setRaha(double rahamaara){
+    //asetetaan alustettu rahamäärä
+    public void setRaha(int rahamaara){
         this.rahamaara=rahamaara;
     }
-    public double getRahamaara(){
+    //palautetaan rahamäärä kysyjälle
+    public int getRahamaara(){
         return rahamaara;
     }
-    public void lisaa(double pano){
+    //lisätään rahaa lompakkoon
+    public void lisaa(int pano){
         rahamaara=rahamaara+pano;
     }
-    boolean vahenna(double otto){
+    //vähennetään rahaa lompakosta
+    boolean vahenna(int otto){
         if (otto>rahamaara){
             System.out.println("Ei ole mistä ottaa, sori...");
             return false;
@@ -39,6 +38,3 @@ public class Lompakko {
                     } 
 }
 }
-
-    
-

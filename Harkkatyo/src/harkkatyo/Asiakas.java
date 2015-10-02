@@ -1,19 +1,17 @@
 package harkkatyo;
 
+//tuodut kirjastot
 import java.util.*;
-import javax.swing.JOptionPane;
 
 public class Asiakas {
 
-    //muuttujat
+    //alustetaan muuttujat
     private Myyja myyja;
     private Lompakko lompakko;
-    public int hinta;
     private Levyt levyt;
+    public String levy;
 
-    public String levy;//teksti
-
-    //luodaan skanneri
+    //luodaan skanneri kyselyä varten
     static Scanner lukija = new Scanner(System.in);
 
     //asiakkaan konstruktori
@@ -22,7 +20,6 @@ public class Asiakas {
     }
 
     //levyjen konstruktori
-
     public void Levyt(Levyt levyt) {
         this.levyt = levyt;
     }
@@ -44,7 +41,7 @@ public class Asiakas {
     }
 
     //levy halutaan ostaa, ja ostetaan jos on rahaa.
-    public boolean maksaLevy(int rahamaara) {
+    public boolean maksaLevy(int hinta) {
         if (lompakko.getRahamaara() > hinta) {
             lompakko.vahenna(hinta);
             return true;
@@ -53,38 +50,53 @@ public class Asiakas {
         }
     }
 
+    //Kysytään mitä levyjä halutaan selata, stringinä!
     public String selaaLevja(String selaus) {
+        //alustetaan syöte tyhjäksi
         String palautus = "";
-        String merkki = selaus; 
+
+        //pakotetaan merkki aina samaksi, helpottaa tutkimista
+        String merkki = selaus.toUpperCase();
+        //Otetaan vain ensimmäinen merkki.
         char cmerkki = merkki.charAt(0);
+        //selataan levyistä kyseisellä kirjaimella alkavat for-loopilla
         for (Levy i : levyt.levyt) {
             if (cmerkki == ((i.artisti).charAt(0))) {
                 palautus = palautus + "\n" + i;
-                
+
             }
-            
 
         }
-        if (palautus.length()== 0){
+        //jos ei löydy levyjä ko kirjaimen alta
+        if (palautus.length() == 0) {
             palautus = "Valitettavasti tämän kirjaimen alla ei ole levyjä.";
-            
+
         }
         return palautus;
     }
+
+    //Tässä käsitellään levylista ostoa varten. Kyseessä siis koko olio, ei pelkkä string
+
+    public ArrayList<Levy> tulostaLevja(String selaus) {
+        //tyhjä syöte
+        String palautus = "";
+        //pakotetaan merkki yleispäteväksi
+        String merkki = selaus.toUpperCase();
+        ArrayList<Levy> listaus = new ArrayList();
+        char cmerkki = merkki.charAt(0);
+        //käydään levyt läpi for-loopilla
+        for (Levy i : levyt.levyt) {
+            if (cmerkki == ((i.artisti).charAt(0))) {
+                listaus.add(i);
+
+            }
+
+        }
+        //jos ei löydy
+        if (palautus.length() == 0) {
+            palautus = "Valitettavasti tämän kirjaimen alla ei ole levyjä.";
+
+        }
+        return listaus;
+    }
 }
-    
-
-    /*ArrayList<Levy> hakutulos = new ArrayList();
-     String loytyi = null;
-
-     for (Levy levy : levyt) {
-     if (haku.equalsIgnoreCase(levy.artisti) || haku.equalsIgnoreCase(levy.levynNimi)) {
-     hakutulos.add(levy);
-     }
-     }
-     if (hakutulos.size() == 0) {
-     return null;
-     }
-     return hakutulos;
-     }*/
-

@@ -12,7 +12,11 @@ public class UI {
     private String haluttulevy;
     private boolean pysylevynostossa;
     List<Levy> vastaus;
-    String kakat;
+    private String selausvalinta;
+    private boolean pysyselauksessa;
+    private int ostettavanhinta = 0;
+    private int valitsin3;
+
 
 
     //KONSTRUKTORIT
@@ -32,24 +36,24 @@ public class UI {
 
     public String Aloitalevykauppa() {
         int valitsin;
-        String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit', ja voit palata "
-                + "takaisin kirjoittamalla 'palaa'.\n\nAstuit sisään levykauppaan, "
+        do {
+        String aloitus = JOptionPane.showInputDialog("Ohjelma loppuu kirjoittamalla 'exit'."
+                + "\n\nAstuit sisään levykauppaan, "
                 + "haluatko kysyä myyjältä artistia vai kävellä ulos? "
                 + "\n1 Kysy myyjältä artistia."
                 + "\n2 Selaa levyjä hyllystä."
                 + "\n3 Kävele ulos.\n");
-        /*while (!aloitus.equals("1")||!aloitus.equals("2")||!aloitus.equals("3")||
-         !aloitus.equals("exit")||!aloitus.equals("palaa")){
-         if (aloitus.equals("exit") || !aloitus.equals("palaa")){
-         return aloitus;    
-         }
-         }*/
+        if (aloitus.equals("exit")){
+            return "exit";
+        }
+        
         valitsin = Integer.parseInt(aloitus);
 
         switch (valitsin) {
 
             case 1: //Aloitusvalitsimen
-
+                
+                //do {
                 haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?");
                 while (kauppa.getOnkolevya(haluttulevy) == null && !haluttulevy.equals("palaa")
                         && !haluttulevy.equals("exit")) {
@@ -57,14 +61,12 @@ public class UI {
                             + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
                     }
                     haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta: ");
-                    if (haluttulevy.equals("palaa") || haluttulevy.equals("exit")) {
+                    if (haluttulevy.equals("palaa") || haluttulevy.equals("exit") || haluttulevy == null) {
                         break;
                     } else {
                         do {
                             vastaus = kauppa.getOnkolevya(haluttulevy);
                             pysylevynostossa = true;
-
-                            System.out.println(vastaus);
                             String levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                                     + Forlauseke(vastaus)
                                     + "! \nHaluaisitko ostaa tämän?\n"
@@ -76,18 +78,16 @@ public class UI {
 
                                 case 1: //Levynostovalitsimen
                                     String ostettavalevy;
-                                    int ostettavanhinta = 0;
                                     ostettavalevy = JOptionPane.showInputDialog("Myyja sanoo: Minkä levyn haluat?\n"
                                             + Forlauseke(vastaus) + "/n");
                                     for (Levy oikea : vastaus) {
-                                        if (ostettavalevy.equals(oikea.levynNimi)) {
+                                        if (ostettavalevy.equalsIgnoreCase(oikea.levynNimi)) {
                                             ostettavanhinta = oikea.hinta;
-
                                         }
                                     }
                                     if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                            + "\n\nLompakkoosi jäi vielä ");
+                                            + "\n\nLompakkoosi jäi vielä "+ kauppa.lompakko.getRahamaara()+"euroa.");
                                     }
                                     else{
                                         JOptionPane.showMessageDialog(null, ostettavanhinta);
@@ -100,29 +100,63 @@ public class UI {
                                     pysylevynostossa = true;
 
                                 case 3://Levynostovalitsimen
+                                    pysylevynostossa = false;
+                                    
                                     break;
                             }
                         } while (pysylevynostossa == true);
                     }
-                
+                //}while (!haluttulevy.equals("exit"));
                 break;
 
             case 2: //Aloitusvalitsin
+                do {
                 String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
-                
-
-                JOptionPane.showMessageDialog(null, kauppa.asiakas.selaaLevja(selaus));
+                ArrayList<Levy> selauslista = new ArrayList();
+                selauslista = kauppa.asiakas.tulostaLevja(selaus);
+                selausvalinta = JOptionPane.showInputDialog(null, kauppa.asiakas.selaaLevja(selaus)+"\n"
+                        + "\nKirjoita levy, jonka haluat ostaa\n"
+                        + "tai\n"
+                        + "2 Selaa muita levyjä\n"
+                        + "3 Poistu hyllyjen luota");
+                if (!selausvalinta.equals(1) || !selausvalinta.equals(2) || !selausvalinta.equals(3)){
+                    for (Levy oikea : selauslista) {
+                                        if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
+                                            ostettavanhinta = oikea.hinta;
+                                        }
+                                    }
+                                    if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
+                                    JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
+                                            + "\n\nLompakkoosi jäi vielä "+ kauppa.lompakko.getRahamaara()+"euroa.");
+                                    }
+                                    else{
+                                        JOptionPane.showMessageDialog(null, ostettavanhinta);
+                                            }
+                                    pysyselauksessa = true;
+                                    break;
+                    
+                }
+                else {
+                    valitsin3 = Integer.parseInt(selausvalinta);
+                }
+                switch (valitsin3){
+                    case 1:
+                        pysyselauksessa = true;
+                        break;
+                    case 2: 
+                        pysyselauksessa = false;
+                        break;
+                }
+                }
+                while (pysyselauksessa = true);
                 break;
 
             case 3: //Aloitusvalitsin
-                JOptionPane.showInputDialog(null, "Anna kakka: ");
-                int kakka = Integer.parseInt(kakat);
-                kauppa.asiakas.maksaLevy(kakka);
-                JOptionPane.showMessageDialog(null, "Kakka toimi! "+kauppa.lompakko.getRahamaara());
+                haluttulevy = "exit";
                 return "exit";
-
         }
-    
+        }
+        while (!haluttulevy.equals("exit"));
     
     return haluttulevy ;
 

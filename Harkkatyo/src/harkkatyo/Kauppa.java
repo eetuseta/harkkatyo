@@ -20,9 +20,9 @@ public class Kauppa {
         myyja.Levyt(levyt);
         asiakas.Lompakko(lompakko);
         do {
-            ui.Aloitalevykauppa();
+            ui.Aloitalevykauppa();            
         } while (!ui.Aloitalevykauppa().equals("exit"));   //Ohjelma loppuu
-    }
+        }
 
     public List<Levy> getOnkolevya(String haluttulevy) {
         return asiakas.onkoLevya(haluttulevy);

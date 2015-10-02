@@ -168,8 +168,8 @@ Dream Theater-Awake-10
 Dream Theater-A Change Of Seasons-15
 Dream Theater-Falling Into Infinity-15
 Dream Theater-Six Degrees Of Inner Turbulence-10
-Bob Dylan-The Freewheelin' Bob Dylan-15
-Bob Dylan-The Times They Are A-Changin'-20
+Bob Dylan-The Freewheelin Bob Dylan-15
+Bob Dylan-The Times They Are A Changin-20
 Bob Dylan-Highway 61 Revisited-15
 Bob Dylan-Subterranean Homesick Blues-20
 Bob Dylan-Blonde On Blonde-20
@@ -286,7 +286,7 @@ Jimi Hendrix-Band Of Gypsys-15
 Jimi Hendrix-First Rays Of The New Rising Sun-10
 Immortal-At The Heart Of Winter-15
 Immortal-Sons Of Northern Darkness-15
-Iron Butterfly-In-A-Gadda-Da-Vida-20
+Iron Butterfly-In A Gadda Da Vida-20
 Iron Maiden-Iron Maiden-15
 Iron Maiden-Killers-15
 Iron Maiden-The Number Of The Beast-20
@@ -351,7 +351,7 @@ King Crimson-Discipline-20
 Carole King-Tapestry-15
 Kingston Wall-I-15
 Kingston Wall-II-15
-Kingston Wall-Tri-Logy-20
+Kingston Wall-TriLogy-20
 Kinks-The Kinks Are The Village Green Preservation Society-15
 Kinks-Lola Versus Powerman And The Moneygoround, Part One-15
 Kiss-Destroyer-15
@@ -361,7 +361,7 @@ Kiss-Hotter Than Hell-15
 Kiss-Animalize-15
 Kotiteollisuus-Tomusta ja tuhkasta-10
 Kotiteollisuus-Yksinpuhelu-10
-Kraftwerk-Radio-activity-15
+Kraftwerk-Radio activity-15
 Led Zeppelin-I-15
 Led Zeppelin-II-15
 Led Zeppelin-III-20
@@ -544,7 +544,7 @@ Queen-Queen-20
 Queen-Queen II-15
 Queen-A Night At The Opera-20
 Queen-A Day At The Races-15
-Queens Of The Stone-Age-Rated R-20
+Queens Of The Stone Age-Rated R-20
 Queens Of The Stone Age-Songs For The Deaf-15
 Queens Of The Stone Age-Lullabies To Paralyze-10
 Queensryche-Gonna Get Close To You-10
@@ -705,7 +705,7 @@ Frank Zappa-Chunga's Revenge-15
 Frank Zappa-Weasels Ripped My Flesh-15
 Frank Zappa-The Grand Wazoo-15
 Frank Zappa-Waka/Jawaka-15
-Frank Zappa-Over-Nite Sensation-20
+Frank Zappa-OverNite Sensation-20
 Frank Zappa-Bongo Fury-15
 Frank Zappa-Studio Tan-15
 Frank Zappa-Joe's Garage-35
@@ -718,8 +718,8 @@ Zen Cafe-Ua ua-15
 ZZ Top-Rio Grande Mud-15
 ZZ Top-Tres Hombres-20
 ZZ Top-Fandango-15
-ZZ Top-Tejas-10	 
-ZZ Top-El Loco-10	 
-ZZ Top-Eliminator-10	 
-ZZ Top-Afterburner-10	 
+ZZ Top-Tejas-10
+ZZ Top-El Loco-10
+ZZ Top-Eliminator-10
+ZZ Top-Afterburner-10
 ZZ Top-Recycler-10

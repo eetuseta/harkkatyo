@@ -13,12 +13,14 @@ public class UI {
     private boolean pysylevynostossa;
     List<Levy> vastaus;
     private String selausvalinta;
-    private boolean pysyselauksessa;
+    boolean pysyselauksessa = true;
     private int ostettavanhinta = 0;
     private int valitsin3;
-    private String aloitus = "pysy";
     private boolean pysymyyjankysymyksessa = true;
-
+    private boolean kysyalkua = true;
+    private int valitsin;
+    boolean kysykirjainta = true;
+    
 //KONSTRUKTORIT
     //public UI (){}
     public UI(Kauppa kauppa) {
@@ -35,12 +37,12 @@ public class UI {
     }
 
     public String Aloitalevykauppa() {
-        int valitsin = 1;
         //tällä pysytään aloitusvalikon loopissa
-        boolean pysyaloituksessa = true; 
+        boolean pysyaloituksessa = true;
         do {
 
-            while (aloitus.equals("pysy")) {
+            while (kysyalkua == true) {
+                String aloitus = null;
                 aloitus = JOptionPane.showInputDialog("Levykaupan ikkunat ovat mustat, muutama tunnistettava\n"
                         + "levy on asetettu näkyviin. Ovi on terästä ja sen saranat ruosteessa.\n"
                         + "Päätät astua sisään levykauppaa."
@@ -50,9 +52,10 @@ public class UI {
                         + "\n2 Selaa levyjä hyllystä."
                         + "\n3 Kävele ulos.\n");
                 if (!aloitus.equals("exit") && !aloitus.equals("1") && !aloitus.equals("2") && !aloitus.equals("3")) {
-                    aloitus = "pysy";
+                    kysyalkua = true; 
                 } else {
                     valitsin = Integer.parseInt(aloitus);
+                    kysyalkua = false;
                 }
             }
             switch (valitsin) {
@@ -119,6 +122,7 @@ public class UI {
                                      else{
                                      JOptionPane.showMessageDialog(null, ostettavanhinta);
                                      }*/
+
                                     pysylevynostossa = true;
                                     break;
 
@@ -130,7 +134,7 @@ public class UI {
                                 case 3://Levynostovalitsimen
                                     pysylevynostossa = false;
                                     pysymyyjankysymyksessa = false;
-                                    aloitus = "pysy";
+                                    kysyalkua = true;
                                     break;
                             }
                         } while (pysylevynostossa == true);
@@ -138,16 +142,20 @@ public class UI {
                     break;
 
                 case 2: //Aloitusvalitsin
-                    do {
-                        String selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
+                        pysyselauksessa = true;
+                        while (pysyselauksessa == true){
+                        String selaus = "";
+                        selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
                         ArrayList<Levy> selauslista = new ArrayList();
-                        selauslista = kauppa.asiakas.tulostaLevja(selaus);
-                        selausvalinta = JOptionPane.showInputDialog(null, kauppa.asiakas.selaaLevja(selaus) + "\n"
+                        selauslista = kauppa.asiakas.tulostaLevja(selaus);                        
+                        selausvalinta = JOptionPane.showInputDialog(null, "Tällä kohddalla on:\n"
+                                + kauppa.asiakas.selaaLevja(selaus) + "\n"
                                 + "\nKirjoita levyn nimi, jonka haluat ostaa\n"
-                                + "tai\n"
-                                + "2 Selaa muita levyjä\n"
-                                + "3 Poistu hyllyjen luota");
-                        if (!selausvalinta.equals(1) && !selausvalinta.equals(2) && !selausvalinta.equals(3)) {
+                                + "2 Tarkista paljon lompakossasi on rahaa\n"
+                                + "3 Selaa muita levyjä\n"
+                                + "4 Poistu hyllyjen luota");
+                        if (!selausvalinta.equals("1") && !selausvalinta.equals("2") && 
+                                !selausvalinta.equals("3") && !selausvalinta.equals("4")) {
                             for (Levy oikea : selauslista) {
                                 if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
                                     ostettavanhinta = oikea.hinta;
@@ -157,9 +165,9 @@ public class UI {
                                 JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
                                         + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + "euroa.");
                             } else {
-                                JOptionPane.showMessageDialog(null, ostettavanhinta);
-                            }
-                            pysyselauksessa = true;
+                                JOptionPane.showMessageDialog(null, "Sinulla ei ole varaa, levy maksaa "
+                                        + ostettavanhinta + "euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara());
+                                }
                             break;
 
                         } else {
@@ -170,24 +178,31 @@ public class UI {
                                 pysyselauksessa = true;
                                 break;
                             case 2:
-                                pysyselauksessa = false;
+                                JOptionPane.showMessageDialog(null, "Lompakossasi on "+kauppa.lompakko.getRahamaara()+"euroa.");
+                                pysyselauksessa = true;
+                                kysykirjainta = false;
                                 break;
                             case 3:
+                                pysyselauksessa = true;
+                                break;
+                            case 4:
                                 pysyselauksessa = false;
-                                aloitus = "pysy";
+                                pysyaloituksessa = true;
+                                kysyalkua = true;
                                 break;
                         }
-                    } while (pysyselauksessa = true);
-                    break;
+                        }
+                    //} while (pysyselauksessa = true);
+                break;
                 //aloitusvalitsimen case 3, jossa koko-ohjelman do-rakenteesta karataan muuttamalla haluttulevyarvo "exit
                 //arvoon.
                 case 3:
                     pysyaloituksessa = false;
-                    aloitus = "exit";
+                    //kysyalkua = true;
                     break;
             }
         } while (pysyaloituksessa == true);
-        return aloitus;
+        return "exit";
     }
 
     public void lopetus() {

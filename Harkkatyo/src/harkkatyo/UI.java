@@ -9,7 +9,7 @@ public class UI {
     private static Scanner lukija = new Scanner(System.in);
 
     private Kauppa kauppa;
-    private String haluttulevy;
+    private String haluttulevy = "pysy";
     private boolean pysylevynostossa;
     List<Levy> vastaus;
     private String selausvalinta;
@@ -17,8 +17,9 @@ public class UI {
     private int ostettavanhinta = 0;
     private int valitsin3;
     private String aloitus = "pysy";
-
-    //KONSTRUKTORIT
+    private boolean pysymyyjankysymyksessa = true;
+    
+//KONSTRUKTORIT
     //public UI (){}
     public UI(Kauppa kauppa) {
         this.kauppa = kauppa;
@@ -36,6 +37,7 @@ public class UI {
     public String Aloitalevykauppa() {
         int valitsin = 1;
         do {
+
             while (aloitus.equals("pysy")) {
                 aloitus = JOptionPane.showInputDialog("Levykaupan ikkunat ovat mustat, muutama tunnistettava\n"
                         + "levy on asetettu näkyviin. Ovi on terästä ja sen saranat ruosteessa.\n"
@@ -52,10 +54,12 @@ public class UI {
                 }
             }
             switch (valitsin) {
-
                 case 1: //Aloitusvalitsimen
 
                     do {
+                        if (haluttulevy.equals("poistu")) {
+                            break;
+                        }
                         haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?\n");
                         while (kauppa.getOnkolevya(haluttulevy) == null) {
                             JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan\n "
@@ -65,7 +69,7 @@ public class UI {
                         //if (kauppa.getOnkolevya(haluttulevy) == null) {
                         //    break;
                         //} else {
-                        vastaus = kauppa.getOnkolevya(haluttulevy);                            
+                        vastaus = kauppa.getOnkolevya(haluttulevy);
                         do {
                             String levynostovalitsin = null;
                             pysylevynostossa = true;
@@ -78,7 +82,7 @@ public class UI {
 
                             if (!levynostovalitsin.equals("1") && !levynostovalitsin.equals("2")
                                     && !levynostovalitsin.equals("3")) {
-
+                                
                                 for (Levy oikea : vastaus) {
                                     if (levynostovalitsin.equalsIgnoreCase(oikea.levynNimi)) {
                                         ostettavanhinta = oikea.hinta;
@@ -123,12 +127,12 @@ public class UI {
 
                                 case 3://Levynostovalitsimen
                                     pysylevynostossa = false;
-                                    haluttulevy = "poistu";
+                                    pysymyyjankysymyksessa = false;
+                                    aloitus = "pysy";
                                     break;
                             }
                         } while (pysylevynostossa == true);
-
-                    } while (!haluttulevy.equals("poistu"));
+                    } while (pysymyyjankysymyksessa == true);
                     break;
 
                 case 2: //Aloitusvalitsin

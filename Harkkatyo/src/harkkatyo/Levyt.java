@@ -25,7 +25,7 @@ public class Levyt {
     }
 
     private void lue() {
-        try (FileReader fr = new FileReader("resources\\testilevyt.txt");
+        try (FileReader fr = new FileReader("resources\\levyt.txt");
                 BufferedReader br = new BufferedReader(fr)) {
             String rivi = br.readLine();
 

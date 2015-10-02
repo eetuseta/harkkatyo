@@ -76,11 +76,11 @@ public class UI {
                         //} else {
                         vastaus = kauppa.getOnkolevya(haluttulevy);
                         do {
-                            String levynostovalitsin = null;
+                            String levynostovalitsin;
                             pysylevynostossa = true;
                             levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                                     + Forlauseke(vastaus)
-                                    + "! \nHaluaisitko ostaa tämän?\n"
+                                    + "\n"
                                     + "\nKirjoita levyn nimi, jonka haluat ostaa."
                                     + "\n2 Tarkista paljon lompakossasi on varaa."
                                     + "\n3 Palaa takaisin.");
@@ -106,23 +106,7 @@ public class UI {
                             int valitsin2 = Integer.parseInt(levynostovalitsin);
                             switch (valitsin2) {
 
-                                case 1: //Levynostovalitsimen
-                                    /*String ostettavalevy;
-                                     ostettavalevy = JOptionPane.showInputDialog("Myyja sanoo: Minkä levyn haluat?\n"
-                                     + Forlauseke(vastaus) + "/n");
-                                     for (Levy oikea : vastaus) {
-                                     if (ostettavalevy.equalsIgnoreCase(oikea.levynNimi)) {
-                                     ostettavanhinta = oikea.hinta;
-                                     }
-                                     }
-                                     if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true){
-                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                     + "\n\nLompakkoosi jäi vielä "+ kauppa.lompakko.getRahamaara()+"euroa.");
-                                     }
-                                     else{
-                                     JOptionPane.showMessageDialog(null, ostettavanhinta);
-                                     }*/
-
+                                case 1:
                                     pysylevynostossa = true;
                                     break;
 

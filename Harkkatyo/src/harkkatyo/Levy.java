@@ -14,6 +14,6 @@ public class Levy {
     //pakottaa tulosteen string-muotoon
     @Override
     public String toString() {
-        return (artisti + " " +levynNimi +" " +hinta +" €");
+        return (artisti + ": " +levynNimi +" " +hinta +" €");
     }
 }

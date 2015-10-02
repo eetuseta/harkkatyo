@@ -2,11 +2,12 @@ package harkkatyo;
 
 //Myyjän käytössä oleva kassa
 public class Kassa {
-    
+    //alustetaan muuttujat
     private double kassanraha;
-    
+    //tyhjä konstruktori
     public Kassa(){
     }
+    //kerrotaan että kassassa on rahaa
     public Kassa (double raha){
         this.kassanraha=raha;
     }

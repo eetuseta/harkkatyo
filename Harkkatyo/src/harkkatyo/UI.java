@@ -18,7 +18,7 @@ public class UI {
     private int valitsin3;
     private String aloitus = "pysy";
     private boolean pysymyyjankysymyksessa = true;
-    
+
 //KONSTRUKTORIT
     //public UI (){}
     public UI(Kauppa kauppa) {
@@ -36,6 +36,8 @@ public class UI {
 
     public String Aloitalevykauppa() {
         int valitsin = 1;
+        //tällä pysytään aloitusvalikon loopissa
+        boolean pysyaloituksessa = true; 
         do {
 
             while (aloitus.equals("pysy")) {
@@ -82,7 +84,7 @@ public class UI {
 
                             if (!levynostovalitsin.equals("1") && !levynostovalitsin.equals("2")
                                     && !levynostovalitsin.equals("3")) {
-                                
+
                                 for (Levy oikea : vastaus) {
                                     if (levynostovalitsin.equalsIgnoreCase(oikea.levynNimi)) {
                                         ostettavanhinta = oikea.hinta;
@@ -145,7 +147,7 @@ public class UI {
                                 + "tai\n"
                                 + "2 Selaa muita levyjä\n"
                                 + "3 Poistu hyllyjen luota");
-                        if (!selausvalinta.equals(1) || !selausvalinta.equals(2) || !selausvalinta.equals(3)) {
+                        if (!selausvalinta.equals(1) && !selausvalinta.equals(2) && !selausvalinta.equals(3)) {
                             for (Levy oikea : selauslista) {
                                 if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
                                     ostettavanhinta = oikea.hinta;
@@ -170,18 +172,22 @@ public class UI {
                             case 2:
                                 pysyselauksessa = false;
                                 break;
+                            case 3:
+                                pysyselauksessa = false;
+                                aloitus = "pysy";
+                                break;
                         }
                     } while (pysyselauksessa = true);
                     break;
-
-                case 3: //Aloitusvalitsin
-                    haluttulevy = "exit";
-                    return "exit";
+                //aloitusvalitsimen case 3, jossa koko-ohjelman do-rakenteesta karataan muuttamalla haluttulevyarvo "exit
+                //arvoon.
+                case 3:
+                    pysyaloituksessa = false;
+                    aloitus = "exit";
+                    break;
             }
-        } while (!haluttulevy.equals("exit"));
-
-        return haluttulevy;
-
+        } while (pysyaloituksessa == true);
+        return aloitus;
     }
 
     public void lopetus() {

@@ -44,6 +44,7 @@ public class Asiakas {
     public boolean maksaLevy(int hinta) {
         if (lompakko.getRahamaara() > hinta) {
             lompakko.vahenna(hinta);
+            myyja.kassa.Maksa(hinta);
             return true;
         } else {
             return false;

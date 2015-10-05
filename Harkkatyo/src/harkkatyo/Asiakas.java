@@ -42,7 +42,7 @@ public class Asiakas {
 
     //levy halutaan ostaa, ja ostetaan jos on rahaa.
     public boolean maksaLevy(int hinta) {
-        if (lompakko.getRahamaara() > hinta) {
+        if (lompakko.getRahamaara() >= hinta) {
             lompakko.vahenna(hinta);
             myyja.kassa.Maksa(hinta);
             return true;

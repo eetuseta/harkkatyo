@@ -21,7 +21,6 @@ public class Levyt {
 
     //konstruktori
     public Levyt() {
-        levyt.ensureCapacity(725);
         lue();
     }
 

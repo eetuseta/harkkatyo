@@ -3,57 +3,39 @@
 69 Eyes-Paris Kills-10
 Abba-Gold-10
 Absoluuttinen Nollapiste-Kupit on kuin olisi haat-10
-Absoluuttinen Nollapiste-Sukututkimus lannistaa-10
 Absoluuttinen Nollapiste-Kotiinpaluu, jotenkin-10
-Absoluuttinen Nollapiste-Hyvia muistoja, huomenna suihkuun-10
 Absoluuttinen Nollapiste-Nimi muutettu-10
 Absoluuttinen Nollapiste-Pyha nynny-5
-Absoluuttinen Nollapiste-Miten tassa viela kay?-5
 AC/DC-Dirty Deeds Done Dirt Cheap-15
 AC/DC-Let There Be Rock-15
-AC/DC-If You Want Blood You've Got It-15
 AC/DC-Highway To Hell-15
 AC/DC-For Those About To Rock-15
 AC/DC-Blow Up Your Video-15
-AC/DC-Ballbreaker-15
 Alice Cooper-Elected-15
 Alice Cooper-Trash-10
 Alice Cooper-Billion Dollar Babies-15
 Apulanta-Syita ja seurauksia-10
 Audioslave-Audioslave-15
-Audioslave-Be Yourself-15
 Audioslave-Out Of Exile-15
 Audioslave-Revelations-15
-Bad Religion-No Control-15
-Bad Religion-Against The Grain-15
 Bad Religion-Generator-15
 Bad Religion-Recipe For Hate-15
 Bad Religion-Stranger Than Fiction-15
 Beastie Boys-Licensed To Ill-15
 Beastie Boys-Paul's Boutique-10
 Beck-Mellow Gold-10
-Beck-Odelay-10
-Beck-Midnite Vultures-15
 Beck-Sea Change-15
 Bjork-Debut-10
 Bjork-Vespertine-15
-Bjork-Volta-20
-Black Sabbath-Black Sabbath-20
 Black Sabbath-Paranoid-15
 Black Sabbath-Master Of Reality-15
 Black Sabbath-Vol. 4-20
-Black Sabbath-Sabbath Bloody Sabbath-15
 Blue Oyster Cult-Blue Oyster Cult-10
 Blue Oyster Cult-Tyranny And Mutation-15
 Bon Jovi-Slipppery When Wet-15
-Bon Jovi-This Left Feels Right-20
 David Bowie-The Man Who Sold The World-20
-David Bowie-Hunky Dory-20
 David Bowie-Ziggy Stardust-20
-David Bowie-Diamond Dogs-15
 David Bowie-Heroes-20
-David Bowie-Low-20
-David Bowie-Lodger-15
 Kate Bush-The Kick Inside-15
 Kate Bush-The Dreaming-20
 Kate Bush-Hounds Of Love-15
@@ -67,40 +49,26 @@ Cannibal Corpse-Gore Obsessed-15
 Cannibal Corpse-Worm Infested-10
 Captain Beefheart-Safe As Milk-20
 Captain Beefheart-Trout Mask Replica-35
-Captain Beefheart-Abba Zaba-25
 Cardigans-Gran Turismo-10
 Johnny Cash-At Folsom Prison-15
-Johnny Cash-At San Quentin-15
 Johnny Cash-American Recordings-10
 Johnny Cash-Ring Of Fire-15
 Cathedral-Forest Of Equilibrium-15
 Cathedral-The Ethereal Mirror-20
-Cathedral-Supernatural Birth Machine-10
-Cathedral-Endtyme-15
 Cathedral-The VIIth Coming-20
-Nick Cave-Let Love In-10
 Nick Cave-Murder Ballads-20
-Nick Cave-The Boatman's Call-15
-Nick Cave-Nocturama-15
 Chemical Brothers-Dig Your Own Hole-15
-Children Of Bodom-Follow The Reaper-10
 Eric Clapton-461 Ocean Boulevard-10
 Eric Clapton-Slowhand-20
 Clash-The Clash-15
-Clash-Give 'Em Enough Rope-10
 Clash-London Calling-20
 CMX-Kolmikarki-20
 CMX-Veljeskunta-20
 CMX-Aurinko-15
-CMX-Aura-15
-CMX-Rautakantele-15
-CMX-Discopolis-10
-CMX-Talvikuningas-20
 Coldplay-A Rush Of Blood To The Head-15
 Coldplay-Viva La Vida-20
 Cream-Disraeli Gears-15
 Cream-Wheels Of Fire-15
-Cream-Live Cream-10
 Creedence Clearwater Revival-Mardi Gras-15
 Creedence Clearwater Revival-Greatest Hits-10
 Cypress Hill-Black Sunday-15
@@ -110,40 +78,25 @@ Danzig-II Lucifuge-15
 Danzig-III How The Gods Kill-15
 Danzig-4p-15
 Miles Davis-Round About Midnight-20
-Miles Davis-Porgy And Bess-15
 Miles Davis-Kind Of Blue-20
-Miles Davis-Sketches Of Spain-20
 Dead Kennedys-California Über Alles-15
 Dead Kennedys-Plastic Surgery Disasters-20
 Dead Kennedys-Frankenchrist-15
-Dead Kennedys-Give Me Convenience Or Give Me Death-15
-Deep Purple-In Rock-15
 Deep Purple-Fireball-20
 Deep Purple-Machine Head-15
 Deep Purple-Burn-20
 Deicide-Deicide-15
 Deicide-Legion-15
-Deicide-Once Upon the Cross-15
 Deicide-Serpents of the Light-15
 Depeche Mode-Speak & Spell-10
 Dire Straits-Making Movies-10
 Dire Straits-Brothers In Arms-15
-Dire Straits-On Every Street-15
 Dire Straits-Sultans Of Swing-20
 Doors-Strange Days-20
 Doors-The Doors-15
-Doors-Waiting For The Sun-15
-Doors-Morrison Hotel-15
 Doors-L.A. Woman-20
-Dream Theater-When Dream And Day Unite-10
-Dream Theater-Images And Words-10
-Dream Theater-A Change Of Seasons-15
 Bob Dylan-The Times They Are A Changin-20
-Bob Dylan-Highway 61 Revisited-15
-Bob Dylan-Subterranean Homesick Blues-20
 Bob Dylan-Blonde On Blonde-20
-Bob Dylan-Blood On The Tracks-20
-Bob Dylan-Slow Train Coming-10
 Eagles-On The Border-10
 Eagles-One Of These Nights-10
 Eagles-Hotel California-20
@@ -155,33 +108,22 @@ Eppu Normaali-Valkoinen kupla-15
 Eppu Normaali-Imperiumin vastaisku-15
 Eppu Normaali-Historian suurmiehia-10
 Eppu Normaali-Repullinen hitteja-15
-Faith No More-Introduce Yourself-10
 Faith No More-The Real Thing-15
 Faith No More-Angel Dust-20
 Faith No More-King For A Day, Fool For A Lifetime-20
-Faith No More-Album Of The Year-15
 Fistula-Goat-15
 Fleetwood Mac-Peter Green's Fleetwood Mac-10
 Fleetwood Mac-The Pious Bird Of Good Omen-15
-Foreigner-Agent Provocateur-10
-Free-Tons Of Sobs-10
 Free-Free-15
 Free-Fire And Water-10
 Free-Highway-15
 Free-Free At Last-10
-Free-Heartbreaker-15
-Peter Gabriel-3-15
-Peter Gabriel-4-15
-Peter Gabriel-So-20
 Gamma Ray-Land Of The Free-10
 Gamma Ray-Somewhere Out In Space-10
 Gamma Ray-Powerplant-10
 Gamma Ray-Blast From The Past-15
 Gamma Ray-No World Order-10
 Garbage-Beautiful Garbage-15
-Marvin Gaye-Let's Get It On-15
-Marvin Gaye-Live-15
-Marvin Gaye-Here, My Dear-10
 Genesis-Trespass-15
 Genesis-Nursery Cryme-15
 Genesis-Foxtrot-15
@@ -197,38 +139,23 @@ Grateful Dead-Aoxomoxoa-15
 Green Day-Dookie-15
 Green Day-Insomniac-10
 Green Day-American Idiot-20
-Herbie Hancock-Maiden Voyage-15
-Herbie Hancock-Head Hunters-15
 Herbie Hancock-Sextant-15
 Herbie Hancock-Thrust-15
-Herbie Hancock-Feets Don't Fail Me Now-10
 Herbie Hancock-Mr. Hands-10
 Hassisen Kone-Taalta tullaan Venaja-10
 Hassisen Kone-Rumat savelet-10
 Hassisen Kone-Harsoinen teras-15
-Hawkwind-Hawkwind-15
 Hawkwind-In Search Of Space-15
-Hawkwind-Doremi Fasol Latido-15
 Hawkwind-Silver Machine-20
 Hawkwind-Space Ritual-20
 Hawkwind-Hall Of The Mountain Grill-15
-Hawkwind-Warrior On The Edge Of Time-15
-Hawkwind-Astounding Sounds, Amazing Music-10
 Hawkwind-Quark Strangeness And Charm-15
-Hawkwind-Hawklords-15
-Hawkwind-P.X.R.5-10
 Hawkwind-Levitation-15
-Hawkwind-Repeat Performance-10
 Hawkwind-Utopia-15
 Hector-Nostalgia-10
 Hector-Herra Mirandos-15
-Hector-Hectorock I-15
 Hector-Liisa pien-10
-Hector-Hotelli Hannikainen-10
-Hector-Hec-10
 Hector-Kadonneet lapset-10
-Hector-Ruusuportti-10
-Hector-Eurooppa-10
 Hector-Hyvaa yota Bambi-10
 Hellacopters-Payin' The Dues-5
 Hellacopters-High Visibility-15
@@ -240,8 +167,6 @@ Helmet-Size Matters-10
 Jimi Hendrix-Axis: Bold As Love-20
 Jimi Hendrix-Electric Ladyland-20
 Jimi Hendrix-Live At Woodstock-15
-Jimi Hendrix-Band Of Gypsys-15
-Jimi Hendrix-First Rays Of The New Rising Sun-10
 Immortal-At The Heart Of Winter-15
 Immortal-Sons Of Northern Darkness-15
 Iron Butterfly-In A Gadda Da Vida-20
@@ -259,38 +184,22 @@ Michael Jackson-Bad-20
 Michael Jackson-Thriller-20
 Jamiroquai-The Return Of The Space Cowboy-15
 Jamiroquai-Synkronized-15
-Jamiroquai-A Funk Odyssey-10
-Jamiroquai-Dynamite-10
 Jean Michel Jarre-Equinoxe-15
 Jean Michel Jarre-Revolutions-15
-Jean Michel Jarre-En Attendant Cousteau-10
 Jefferson Airplane-After Bathing At Baxter's-15
 Jefferson Airplane-Crown Of Creation-10
-Jethro Tull-This Was-15
-Jethro Tull-Stand Up-15
-Jethro Tull-Benefit-15
 Jethro Tull-Aqualung-20
 Jethro Tull-Living In The Past-15
 Joy Division-Unknown Pleasures-20
 Joy Division-Closer-20
 Joy Division-Still-15
-Joy Division-Atmosphere-10
-Judas Priest-Sin After Sin-15
-Judas Priest-Stained Class-20
 Judas Priest-British Steel-20
 Judas Priest-Turbo-20
-Judas Priest-Ram It Down-15
 Judas Priest-Painkiller-20
-J. Karjalainen-Laura Hakkisen silmat-10
 Katri Helena-Puhelin Langat Laulaa-15
 King Crimson-In The Court Of The Crimson King-20
-King Crimson-In The Wake Of Poseidon-15
-King Crimson-Lizard-15
-King Crimson-Islands-15
-King Crimson-Earthbound-15
 King Crimson-Larks' Tongues In Aspic-20
 King Crimson-Red-20
-King Crimson-Starless And Bible Black-15
 King Crimson-Discipline-20
 Carole King-Tapestry-15
 Kingston Wall-I-15
@@ -299,12 +208,8 @@ Kingston Wall-TriLogy-20
 Kinks-The Kinks Are The Village Green Preservation Society-15
 Kinks-Lola Versus Powerman And The Moneygoround, Part One-15
 Kiss-Destroyer-15
-Kiss-Creatures Of The Night-15
 Kiss-Dressed To Kill-15
 Kiss-Hotter Than Hell-15
-Kiss-Animalize-15
-Kotiteollisuus-Tomusta ja tuhkasta-10
-Kotiteollisuus-Yksinpuhelu-10
 Kraftwerk-Radio activity-15
 Led Zeppelin-I-15
 Led Zeppelin-II-15
@@ -314,41 +219,23 @@ Led Zeppelin-Houses Of The Holy-20
 Led Zeppelin-Physical Graffiti-20
 Led Zeppelin-Presence-10
 Led Zeppelin-In Through The Out Door-15
-Juice Leskinen-Juice Leskinen & Coitus Int-15
 Juice Leskinen-Per Vers, runoilija-15
 Juice Leskinen-Keskitysleirin ruokavalio-15
-Juice Leskinen-XV yo-20
-Juice Leskinen-Boogieteorian alkeet-15
 Juice Leskinen-Pyromaani palaa rikospaikalle-20
-Juice Leskinen-Yolento-15
-Dave Lindholm-Isokyna Lindholm-15
-Dave Lindholm-Fandjango-15
-Bob Marley-Rastaman Vibration-15
 Bob Marley-Exodus-15
 Bob Marley-Babylon By Bus-10
-Bob Marley-Survival-10
 Bob Marley-Uprising-15
-Massive Attack-Blue Lines-10
-Massive Attack-Protection-15
-Massive Attack-Mezzanine-15
-Maukka Perusjatka-Ennen kolmatta maailmansotaa-10
-Maukka Perusjatka-Koiranpennut-10
 MC5-Kick Out The Jams-15
 MC5-Back In The USA-15
 Melvins-Houdini-20
 Melvins-Stoner Witch-20
 Melvins-Nude With Boots-20
 Metallica-Kill 'Em All-15
-Metallica-Ride The Lightning-15
 Metallica-Master Of Puppets-20
 Metallica-And Justice For All-20
-Metallica-Metallica-15
 Misfits-Walk Among Us-20
 Misfits-Earth A.D.-20
 Misfits- Static Age-20
-Moby-Play-15
-Moby-18-15
-Moby-Hotel-10
 Gary Moore-Still Got The Blues-15
 Morbid Angel-Altars of Madness-20
 Morbid Angel-Blessed Are the Sick-20
@@ -356,27 +243,19 @@ Morbid Angel-Covenant-20
 Alanis Morissette-Jagged Little Pill-15
 Van Morrison-Astral Weeks-15
 Van Morrison-Moondance-15
-Motorhead-Motorhead-15
 Motorhead-Bomber-20
-Motorhead-Overkill-15
 Motorhead-Ace Of Spades-20
 Motorhead-No Sleep 'til Hammersmith-15
 Napalm Death-Scum-20
 Napalm Death-Harmony Corruption-20
 Napalm Death-Mass Appeal Madness-15
-Napalm Death-Order Of The Leech-10
 Nasum-Helvete-15
 Nasum-Doombringer-15
-Neurosis-Times Of Grace-10
-Neurosis-Sovereign-10
-Neurosis-A Sun That Never Sets-10
 Nile-In Their Darkened Shrines-10
 Nine Inch Nails-With Teeth-10
 Nirvana-Bleach-15
 Nirvana-Nevermind-20
-Nirvana-Incesticide-10
 Nirvana-In Utero-15
-Nirvana-Unplugged In New York-10
 No Doubt-Return Of Saturn-10
 NoFX-Regaining Unconsciousness-10
 NoMeansNo-Small Parts Isolated And Destroyed-10
@@ -384,9 +263,6 @@ NoMeansNo-Wrong-10
 NoMeansNo-The Power Of Positive Thinking-10
 Ted Nugent-Scream Dream-10
 Ted Nugent-If You Can't Lick 'em, Lick 'em-15
-Nylon Beat-Nylon Beat-10
-Nylon Beat-Satasen Laina-10
-Nylon Beat-Extreme-10
 Mike Oldfield-Tubular Bells-20
 Mike Oldfield-Ommadawn-10
 Opeth-Orchid-15
@@ -401,15 +277,9 @@ Pain-Eleanor Rigby-10
 Paleface-Quarter Past-15
 Paradise Lost-Shades Of God-20
 Paradise Lost-Icon-15
-Pentagram-Day Of Reckoning-15
-Pentagram-Be Forewarned-10
-Pentagram-Turn To Stone-10
 Pet Shop Boys-Nightlife-10
 Pink Floyd-The Piper At The Gates Of Dawn-20
-Pink Floyd-Ummagumma-20
-Pink Floyd-Atom Heart Mother-20
 Pink Floyd-Dark Side Of The Moon-20
-Pink Floyd-Animals-15
 Pink Floyd-The Wall-20
 Pekka Pohjola-Pihkasilma kaarnakorva-15
 Police-Reggatta de Blanc-20
@@ -418,9 +288,6 @@ Iggy Pop-The Idiot-15
 Iggy Pop-Lust For Life-20
 Iggy Pop-Blah Blah Blah-10
 Popeda-Harasoo-5
-Portishead-Dummy-15
-Portishead-Portishead-15
-Portishead-Third-10
 Prince-Purple Rain-20
 Prince-Around The World In A Day-10
 Prince-Sign 'O' The Times-20
@@ -466,50 +333,28 @@ Rolling Stones-Exile On Main Street-20
 Rolling Stones-It's Only Rock 'n Roll-20
 Santana-Santana-15
 Santana-Abraxas-20
-Santana-The Third Album-10
 Santana-Supernatural-20
 Satyricon-Dark Medieval Times-15
 Satyricon-The Shadowthrone-15
 Satyricon-Nemesis Divina-15
-Satyricon-Megiddo-10
-Satyricon-Intermezzo II-10
-Satyricon-Rebel Extravaganza-10
 Sepultura-Chaos A.D.-20
 Sepultura-Roots-15
-Martti Servo & Napander-Pelisaannot-15
-Martti Servo & Napander-Hyvalta nayttaa-10
-Martti Servo & Napander-Taysosuma-15
 Sielun Veljet-Sielun Veljet-15
 Sielun Veljet-L'amourha-10
 Sigur Ros-Takk-15
-Simon & Garfunkel-Sounds Of Silence-20
-Simon & Garfunkel-Parsley, Sage, Rosemary And Thyme-15
-Simon & Garfunkel-Bridge Over Troubled Water-20
 Patti Smith-Radio Ethiopia-15
 Patti Smith-Wave-10
-Social Distortion-Social Distortion-10
-Social Distortion-Somewhere Between Heaven And Hell-15
-Social Distortion-White Light White Heat White Trash-15
-Sonic Youth-Sister-10
-Sonic Youth-Daydream Nation-15
-Sonic Youth-Goo-15
 Soundgarden-Badmotorfinger-20
 Soundgarden-Superunknown-20
 Soundgarden-Down On The Upside-15
 Spice Girls-Spice-15
 Spice Girls-Spiceworld-10
 Bruce Springsteen-Born To Run-20
-Bruce Springsteen-Darkness On The Edge Of Town-15
 Bruce Springsteen-The River-20
-Bruce Springsteen-Nebraska-15
 Bruce Springsteen-Born In The U.S.A.-15
-Bruce Springsteen-Tunnel Of Love-15
 Stooges-The Stooges-15
 Stooges-Fun House-15
 Stooges-Raw Power-20
-Suicidal Tendencies-Join The Army-15
-Suicidal Tendencies-How Will I Laugh Tomorrow When I Can't Even Smile Today-15
-Suicidal Tendencies-Lights...Camera...Revolution-10
 Terveet Kadet-Pahan voima-15
 Terveet Kadet-The Ultimate Pain-10
 Terveet Kadet-Non Ultra Descriptica-15
@@ -568,30 +413,19 @@ Yes-Close To The Edge-15
 Yes-Going For The One-10
 Yes-Tormato-10
 Neil Young-Everybody Knows This Is Nowhere-20
-Neil Young-Neil Young-15
 Neil Young-After The Gold Rush-20
-Neil Young-Harvest-20
-Neil Young-On The Beach-15
-Neil Young-Tonight's The Night-15
 Neil Young-Zuma-20
-Neil Young-American Stars 'n' Bars-15
 Neil Young-Rust Never Sleeps-20
 Neil Young-Trans-10
 Neil Young-Mirror Ball-20
-Frank Zappa-Freak Out-15
 Frank Zappa-Burnt Weeny Sandwich-15
 Frank Zappa-Hot Rats-20
-Frank Zappa-Uncle Meat-15
 Frank Zappa-Chunga's Revenge-15
-Frank Zappa-Weasels Ripped My Flesh-15
 Frank Zappa-The Grand Wazoo-15
 Frank Zappa-Waka/Jawaka-15
 Frank Zappa-OverNite Sensation-20
-Frank Zappa-Bongo Fury-15
-Frank Zappa-Studio Tan-15
 Frank Zappa-Joe's Garage-35
 Frank Zappa-Sheik Yerbouti-20
-Frank Zappa-Sleep Dirt-15
 Frank Zappa-The Man From Utopia-15
 Zen Cafe-Romuna-10
 Zen Cafe-Idiootti-15

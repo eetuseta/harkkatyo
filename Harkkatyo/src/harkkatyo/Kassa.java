@@ -3,22 +3,22 @@ package harkkatyo;
 //Myyjän käytössä oleva kassa
 public class Kassa {
     //alustetaan muuttujat
-    private double kassanraha;
+    private int kassanraha;
     //tyhjä konstruktori
     public Kassa(){
     }
     //kerrotaan että kassassa on rahaa
-    public Kassa (double raha){
+    public Kassa (int raha){
         this.kassanraha=raha;
     }
     
     //Metodit
     
-    public void Maksa(double raha){     //Lisää kassaan rahaa
+    public void Maksa(int raha){     //Lisää kassaan rahaa
         this.kassanraha = raha + this.kassanraha;
     } 
     
-    public double getRahaakassassa(){   //Palauttaa paljon kassassa on rahaa
+    public int getRahaakassassa(){   //Palauttaa paljon kassassa on rahaa
         return kassanraha;
     }
     

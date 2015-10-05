@@ -14,7 +14,7 @@ public class Myyja {
     }
     //Metodit
     //levyn maksun vastaanotto
-    public void Maksakassaan(double summa){
+    public void Maksakassaan(int summa){
         kassa.Maksa(summa);
     }
     //levylistaus

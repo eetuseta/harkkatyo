@@ -20,6 +20,7 @@ public class UI {
     private boolean kysyalkua = true;
     private int valitsin;
     boolean kysykirjainta = true;
+    private String levynostovalitsin;
     
 //KONSTRUKTORIT
     //public UI (){}
@@ -39,11 +40,11 @@ public class UI {
     public String Aloitalevykauppa() {
         //tällä pysytään aloitusvalikon loopissa
         boolean pysyaloituksessa = true;
-        do {
+        while (pysyaloituksessa == true){
 
             while (kysyalkua == true) {
                 String aloitus = null;
-                aloitus = JOptionPane.showInputDialog("Levykaupan ikkunat ovat mustat, muutama tunnistettava\n"
+                aloitus = JOptionPane.showInputDialog(null, "Levykaupan ikkunat ovat mustat, muutama tunnistettava\n"
                         + "levy on asetettu näkyviin. Ovi on terästä ja sen saranat ruosteessa.\n"
                         + "Päätät astua sisään levykauppaa."
                         + "\n\n"
@@ -60,24 +61,29 @@ public class UI {
             }
             switch (valitsin) {
                 case 1: //Aloitusvalitsimen
-
-                    do {
-                        if (haluttulevy.equals("poistu")) {
-                            break;
-                        }
+                    pysymyyjankysymyksessa = true;
+                    while (pysymyyjankysymyksessa == true){
+                        
                         haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä levyä etsit?\n");
-                        while (kauppa.getOnkolevya(haluttulevy) == null) {
-                            JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan\n "
-                                    + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
-                            haluttulevy = JOptionPane.showInputDialog("Myyjä sanoo: Kysyppä jotain muuta \n");
+                        while (kauppa.getOnkolevya(haluttulevy) == null && !haluttulevy.equals("palaa")) {
+                            haluttulevy = JOptionPane.showInputDialog(null, "Myyjän hupparinhiha värähtää, mutta pysähtyy. Hän nostaa toista \n"
+                                    + "kulmakarvaansa ja murahtaa, hänen väsyneet silmänsä kertovat tarinan \n"
+                                    + "entisestä soolokitaristista, jonka unelmat ovat kauan sitten kuolleet. \n\n"
+                                    + "Voit kysyä jotain muuta levyä tai artisti tai poistua tiskiltä kirjoittamalla 'palaa'");                          
                         }
-                        //if (kauppa.getOnkolevya(haluttulevy) == null) {
-                        //    break;
-                        //} else {
-                        vastaus = kauppa.getOnkolevya(haluttulevy);
-                        do {
-                            String levynostovalitsin;
+                        if (haluttulevy.equals("palaa")){
+                            pysylevynostossa = false;
+                            pysymyyjankysymyksessa = false;
+                            pysyaloituksessa = true;
+                            kysyalkua = true;
+                            break;                                                   
+                        }
+                        else {
                             pysylevynostossa = true;
+                            vastaus = kauppa.getOnkolevya(haluttulevy);
+                        }
+                        while (pysylevynostossa == true) {
+                            
                             levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                                     + Forlauseke(vastaus)
                                     + "\n"
@@ -121,8 +127,8 @@ public class UI {
                                     pysylevynostossa = true;
                                     break;
                             }
-                        } while (pysylevynostossa == true);
-                    } while (pysymyyjankysymyksessa == true);
+                        } 
+                    }
                     break;
 
                 case 2: //Aloitusvalitsin
@@ -182,7 +188,7 @@ public class UI {
                     //kysyalkua = true;
                     break;
             }
-        } while (pysyaloituksessa == true);
+        }
         return "exit";
     }
 

@@ -100,7 +100,7 @@ public class UI {
                                             + ostettavanhinta + "euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara());
                                 }
                                 pysylevynostossa = true;
-                                levynostovalitsin = "1";
+                                levynostovalitsin = "3";
                             }
                             int valitsin2 = Integer.parseInt(levynostovalitsin);
                             switch (valitsin2) {
@@ -115,6 +115,10 @@ public class UI {
                                     pysylevynostossa = false;
                                     pysymyyjankysymyksessa = false;
                                     kysyalkua = true;
+                                    break;
+                                
+                                case 3: 
+                                    pysylevynostossa = true;
                                     break;
                             }
                         } while (pysylevynostossa == true);

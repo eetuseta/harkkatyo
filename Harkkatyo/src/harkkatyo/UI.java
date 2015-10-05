@@ -47,7 +47,7 @@ public class UI {
                         + "levy on asetettu näkyviin. Ovi on terästä ja sen saranat ruosteessa.\n"
                         + "Päätät astua sisään levykauppaa."
                         + "\n\n"
-                        + "Haluatko kysyä levyä myyjältä, selata itse hyllyjä vai kävellä ulos? "
+                        + "Haluatko kysyä levyä myyjältä, selata itse hyllyjä vai kävellä ulos?"
                         + "\n1 Kysy levyä myyjältä."
                         + "\n2 Selaa levyjä hyllystä."
                         + "\n3 Kävele ulos.\n");

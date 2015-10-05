@@ -65,13 +65,15 @@ public class UI {
                     while (pysymyyjankysymyksessa == true){
                         
                         haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä levyä etsit?\n");
-                        while (kauppa.getOnkolevya(haluttulevy) == null && !haluttulevy.equals("palaa")) {
+                        while (kauppa.getOnkolevya(haluttulevy) == null && !haluttulevy.equals("1")) {
                             haluttulevy = JOptionPane.showInputDialog(null, "Myyjän hupparinhiha värähtää, mutta pysähtyy. Hän nostaa toista \n"
                                     + "kulmakarvaansa ja murahtaa, hänen väsyneet silmänsä kertovat tarinan \n"
                                     + "entisestä soolokitaristista, jonka unelmat ovat kauan sitten kuolleet. \n\n"
-                                    + "Voit kysyä jotain muuta levyä tai artisti tai poistua tiskiltä kirjoittamalla 'palaa'");                          
+                                    + "Voit kysyä jotain muuta levyä tai artistia kirjoittamalla se\n"
+                                    + "-tai-\n"
+                                    + "1 Poistua tiskiltä.");                          
                         }
-                        if (haluttulevy.equals("palaa")){
+                        if (haluttulevy.equals("1")){
                             pysylevynostossa = false;
                             pysymyyjankysymyksessa = false;
                             pysyaloituksessa = true;
@@ -87,7 +89,8 @@ public class UI {
                             levynostovalitsin = JOptionPane.showInputDialog("Myyjä sanoo: Kyllähän meiltä löytyy!\n"
                                     + Forlauseke(vastaus)
                                     + "\n"
-                                    + "\nKirjoita levyn nimi, jonka haluat ostaa."
+                                    + "\nKirjoita levyn nimi, jonka haluat ostaa.\n"
+                                    + "-tai-\n"
                                     + "\n1 Tarkista paljon lompakossasi on rahaa."
                                     + "\n2 Palaa takaisin.");
 
@@ -138,9 +141,10 @@ public class UI {
                         selaus = JOptionPane.showInputDialog("Miltä kohdalta selataan? (A-Z)");
                         ArrayList<Levy> selauslista = new ArrayList();
                         selauslista = kauppa.asiakas.tulostaLevja(selaus);                        
-                        selausvalinta = JOptionPane.showInputDialog(null, "Tällä kohddalla on:\n"
+                        selausvalinta = JOptionPane.showInputDialog(null, "Tällä kohdalla on:\n"
                                 + kauppa.asiakas.selaaLevja(selaus) + "\n"
                                 + "\nKirjoita levyn nimi, jonka haluat ostaa\n"
+                                + "-tai-\n"
                                 + "1 Tarkista paljon lompakossasi on rahaa\n"
                                 + "2 Selaa muita levyjä\n"
                                 + "3 Poistu hyllyjen luota");

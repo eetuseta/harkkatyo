@@ -29,7 +29,7 @@ public class UI {
 
     //METODIT
     public String Forlauseke(List<Levy> vastaus) {
-        String listaus = "Löytyi itseasiassa useampikin:";
+        String listaus = "Tällaista:";
         for (Levy albumi : vastaus) {
             listaus = listaus + "\n" + albumi;
         }
@@ -47,8 +47,8 @@ public class UI {
                         + "levy on asetettu näkyviin. Ovi on terästä ja sen saranat ruosteessa.\n"
                         + "Päätät astua sisään levykauppaa."
                         + "\n\n"
-                        + "haluatko kysyä myyjältä artistia vai kävellä ulos? "
-                        + "\n1 Kysy myyjältä artistia."
+                        + "Haluatko kysyä levyä myyjältä, selata itse hyllyjä vai kävellä ulos? "
+                        + "\n1 Kysy levyä myyjältä."
                         + "\n2 Selaa levyjä hyllystä."
                         + "\n3 Kävele ulos.\n");
                 if (!aloitus.equals("exit") && !aloitus.equals("1") && !aloitus.equals("2") && !aloitus.equals("3")) {
@@ -65,7 +65,7 @@ public class UI {
                         if (haluttulevy.equals("poistu")) {
                             break;
                         }
-                        haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä artistia etsit?\n");
+                        haluttulevy = JOptionPane.showInputDialog("Myyjä kysyy: Mitä levyä etsit?\n");
                         while (kauppa.getOnkolevya(haluttulevy) == null) {
                             JOptionPane.showMessageDialog(null, "Myyjä sanoo: PÖH! Ei me ny ihan mitä vaan\n "
                                     + "sunnuntaiartisteja pidetä hyllyillä notkumassa");
@@ -82,11 +82,10 @@ public class UI {
                                     + Forlauseke(vastaus)
                                     + "\n"
                                     + "\nKirjoita levyn nimi, jonka haluat ostaa."
-                                    + "\n2 Tarkista paljon lompakossasi on varaa."
-                                    + "\n3 Palaa takaisin.");
+                                    + "\n1 Tarkista paljon lompakossasi on rahaa."
+                                    + "\n2 Palaa takaisin.");
 
-                            if (!levynostovalitsin.equals("1") && !levynostovalitsin.equals("2")
-                                    && !levynostovalitsin.equals("3")) {
+                            if (!levynostovalitsin.equals("1") && !levynostovalitsin.equals("2")) {
 
                                 for (Levy oikea : vastaus) {
                                     if (levynostovalitsin.equalsIgnoreCase(oikea.levynNimi)) {
@@ -106,16 +105,13 @@ public class UI {
                             int valitsin2 = Integer.parseInt(levynostovalitsin);
                             switch (valitsin2) {
 
-                                case 1:
-                                    pysylevynostossa = true;
-                                    break;
-
-                                case 2: //Levynostovalitsimen
+                                
+                                case 1: //Levynostovalitsimen
                                     JOptionPane.showMessageDialog(null, "Lompakossasi on " + kauppa.lompakko.getRahamaara() + "euroa .");
                                     pysylevynostossa = true;
                                     break;
 
-                                case 3://Levynostovalitsimen
+                                case 2://Levynostovalitsimen
                                     pysylevynostossa = false;
                                     pysymyyjankysymyksessa = false;
                                     kysyalkua = true;
@@ -135,11 +131,11 @@ public class UI {
                         selausvalinta = JOptionPane.showInputDialog(null, "Tällä kohddalla on:\n"
                                 + kauppa.asiakas.selaaLevja(selaus) + "\n"
                                 + "\nKirjoita levyn nimi, jonka haluat ostaa\n"
-                                + "2 Tarkista paljon lompakossasi on rahaa\n"
-                                + "3 Selaa muita levyjä\n"
-                                + "4 Poistu hyllyjen luota");
+                                + "1 Tarkista paljon lompakossasi on rahaa\n"
+                                + "2 Selaa muita levyjä\n"
+                                + "3 Poistu hyllyjen luota");
                         if (!selausvalinta.equals("1") && !selausvalinta.equals("2") && 
-                                !selausvalinta.equals("3") && !selausvalinta.equals("4")) {
+                                !selausvalinta.equals("3")) {
                             for (Levy oikea : selauslista) {
                                 if (selausvalinta.equalsIgnoreCase(oikea.levynNimi)) {
                                     ostettavanhinta = oikea.hinta;
@@ -159,17 +155,14 @@ public class UI {
                         }
                         switch (valitsin3) {
                             case 1:
-                                pysyselauksessa = true;
-                                break;
-                            case 2:
                                 JOptionPane.showMessageDialog(null, "Lompakossasi on "+kauppa.lompakko.getRahamaara()+"euroa.");
                                 pysyselauksessa = true;
                                 kysykirjainta = false;
                                 break;
-                            case 3:
+                            case 2:
                                 pysyselauksessa = true;
                                 break;
-                            case 4:
+                            case 3:
                                 pysyselauksessa = false;
                                 pysyaloituksessa = true;
                                 kysyalkua = true;

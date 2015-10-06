@@ -107,6 +107,7 @@ public class UI {
                             //Tarkistetaan onko syöte valintanumero vai halutaanko ostaa
                             if (!levynostovalitsin.equals("1") && !levynostovalitsin.equals("2")) {
                                 //Tässä listataan kaikki vastauslistan levyt ja tarkistetaan onko sama levynnimi, kun se löytyy sen hinta asetetaan 
+                                ostettavanhinta = 0;
                                 for (Levy oikea : vastaus) {
                                     if (levynostovalitsin.equalsIgnoreCase(oikea.levynNimi)) {
                                         ostettavanhinta = oikea.hinta;
@@ -115,11 +116,11 @@ public class UI {
                                 //ja nyt haettua hintaa käytetään ja tarkistetaan onko rahaa siihen, jos on se siirretään lompakosta kassaan
                                 if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true) {
                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                            + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + "euroa.");
+                                            + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + " euroa.");
                                     //jos rahaa ei ole ilmoitetaan virheteksti
                                 } else {
                                     JOptionPane.showMessageDialog(null, "Sinulla ei ole varaa, levy maksaa "
-                                            + ostettavanhinta + "euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara());
+                                            + ostettavanhinta + " euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara()+ " euroa.");
                                 }
                                 //asetetaan kriteerit että looppi palaa takaisin viimeisimpään valikkoon
                                 pysylevynostossa = true;
@@ -130,7 +131,7 @@ public class UI {
                             switch (valitsin2) {
 
                                 case 1: //Levynostovalitsimen "tarkista lompakon raha"
-                                    JOptionPane.showMessageDialog(null, "Lompakossasi on " + kauppa.lompakko.getRahamaara() + "euroa .");
+                                    JOptionPane.showMessageDialog(null, "Lompakossasi on " + kauppa.lompakko.getRahamaara() + " euroa.");
                                     pysylevynostossa = true;
                                     break;
 
@@ -154,8 +155,10 @@ public class UI {
                     pysyselauksessa = true;
                     while (pysyselauksessa == true) {
                         String selaus = "";
-                        selaus = JOptionPane.showInputDialog("Puiset ja pölyiset hyllyt notkuvat raskasta metallimusiikkia\n"
+                        while (selaus.equals("")){
+                        selaus = JOptionPane.showInputDialog("Puiset ja pölyiset hyllyt notkuvat pääasiassa raskasta metallimusiikkia\n"
                                 + "\nMiltä kohdalta selataan? (A-Z)");
+                        }
                         //Tehdään sisempi looppi jossa pysytään valikossa ja näytetään samat hakutulokset
                         boolean pysyselauslistassa = true;
                         while (pysyselauslistassa == true) {
@@ -182,11 +185,11 @@ public class UI {
                                 //käytetään löydettyä hintaa ja maksetaan sillä jos toimii
                                 if (kauppa.asiakas.maksaLevy(ostettavanhinta) == true) {
                                     JOptionPane.showMessageDialog(null, "Myyja sanoo: Oleppa hyvä!"
-                                            + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + "euroa.");
+                                            + "\n\nLompakkoosi jäi vielä " + kauppa.lompakko.getRahamaara() + " euroa.");
                                     //ja jos ei toimi
                                 } else {
                                     JOptionPane.showMessageDialog(null, "Sinulla ei ole varaa, levy maksaa "
-                                            + ostettavanhinta + "euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara());
+                                            + ostettavanhinta + " euroa ja sinulla on lompakossa " + kauppa.lompakko.getRahamaara() +" euroa.");
                                 }
                                 break;
                             //jos valinta oli 1,2,3 niin muutetaan INT tyypiksi jotta switch lukee sen
@@ -197,7 +200,7 @@ public class UI {
                             switch (valitsin3) {
                                 //"näytä lompakon raha" 
                                 case 1:
-                                    JOptionPane.showMessageDialog(null, "Lompakossasi on " + kauppa.lompakko.getRahamaara() + "euroa.");
+                                    JOptionPane.showMessageDialog(null, "Lompakossasi on " + kauppa.lompakko.getRahamaara() + " euroa.");
                                     pysyselauksessa = true;
                                     kysykirjainta = false;
                                     pysyselauslistassa = true;
@@ -230,7 +233,7 @@ public class UI {
     //Tämä suoritetaan ennen ohjelman loppua ja näyttää lompakkosi sisällön ja kassan sisällön
     public void lopetus() {
         JOptionPane.showMessageDialog(null, "Poistuit levykaupasta, "
-                + "lompakkoosi jäi " + kauppa.lompakko.getRahamaara() + "euroa"
-                + " ja kaupan kassaan jäi " + kauppa.myyja.kassa.getRahaakassassa() + "euroa.");
+                + "lompakkoosi jäi " + kauppa.lompakko.getRahamaara() + " euroa"
+                + " ja kaupan kassaan jäi " + kauppa.myyja.kassa.getRahaakassassa() + " euroa.");
     }
 }
